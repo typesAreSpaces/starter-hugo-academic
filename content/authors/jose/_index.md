@@ -18,22 +18,20 @@ bio: My research interests include distributed robotics, mobile computing and pr
 
 # Interests to show in About widget
 interests:
-  - Artificial Intelligence
-  - Computational Linguistics
-  - Information Retrieval
+  - Formal Verification
+  - Archimedean Quadratic Modules
+  - Groebner basis algorithms
+  - Quantifier-free interpolation algorithms for decidable logics
 
 # Education to show in About widget
 education:
   courses:
-    - course: PhD in Artificial Intelligence
-      institution: Stanford University
-      year: 2012
-    - course: MEng in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2009
-    - course: BSc in Artificial Intelligence
-      institution: Massachusetts Institute of Technology
-      year: 2008
+    - course: MS in Computer Science
+      institution: University of New Mexico
+      year: 2020
+    - course: BSc in Electrical Engineering
+      institution: Universidad de las Americas Puebla
+      year: 2015
 
 # Social/Academic Networking
 # For available icons, see: https://wowchemy.com/docs/getting-started/page-builder/#icons
@@ -42,36 +40,46 @@ education:
 social:
   - icon: envelope
     icon_pack: fas
-    link: '/#contact'
+    link: mailto:jabelcastellanosjoo@unm.edu
   - icon: twitter
     icon_pack: fab
-    link: https://twitter.com/GeorgeCushen
+    link: https://twitter.com/Jose_Abel34
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
+# TODO: fix this
     link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
   - icon: github
     icon_pack: fab
-    link: https://github.com/gcushen
+    link: https://github.com/typesAreSpaces
   - icon: linkedin
     icon_pack: fab
+# TODO: fix this
     link: https://www.linkedin.com/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
 # and uncomment the lines below.
-# - icon: cv
-#   icon_pack: ai
-#   link: uploads/resume.pdf
+  - icon: cv
+    icon_pack: ai
+    link: personal/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: ''
+email: 'jabelcastellanosjoo@unm.edu'
 
 # Highlight the author in author lists? (true/false)
 highlight_name: true
 ---
 
-Nelson Bighetti is a professor of artificial intelligence at the Stanford AI Lab. His research interests include distributed robotics, mobile computing and programmable matter. He leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I'm a Ph.D. student at the <a href="https://www.unm.edu/">University of New Mexico</a> 
+in the <a href="https://www.cs.unm.edu/">Computer Science Department</a> advised by 
+<a href="https://www.cs.unm.edu/~kapur/">Prof. Deepak Kapur</a> working on formal methods
+and computer algebra.  I'm interested in software verification, programming languages,
+commutative algebra, and non-classical logics.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate.
+I obtained my bacherlor's degree in electronics engineering from 
+<a href="https://www.udlap.mx/web/en/">Universidad de las Americas Puebla</a>
+advised by 
+<a href="https://sites.google.com/site/osoriomauri/">Prof. Mauricio Osorio Galindo</a>,
+working on the paraconsistent logic \(C_1\).
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "uploads/demo_resume.pdf" "newtab" >}}resumé{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "personal/cv.pdf" "newtab" >}} resumé {{< /staticref >}}.
