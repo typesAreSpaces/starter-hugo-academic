@@ -1,4 +1,5 @@
-BASE_URL='https:\/\/www.cs.unm.edu\/~jose.castellanosjoo\/'
+USERNAME='~jose.castellanosjoo'
+BASE_URL='https:\/\/www.cs.unm.edu\/$(USERNAME)\/'
 CURRENT_ICON_PATH=~/Pictures/icon.png
 
 .PHONY: build test clean deploy setBaseUrl setLogo
@@ -7,7 +8,7 @@ build:
 	hugo -D
 
 test:
-	firefox --new-tab http://localhost:1313/~jose.castellanosjoo/
+	firefox --new-tab http://localhost:1313/$(USERNAME)/
 	hugo server -D
 
 clean:
