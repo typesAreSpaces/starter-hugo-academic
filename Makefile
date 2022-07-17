@@ -1,6 +1,7 @@
 BASE_URL='https:\/\/www.cs.unm.edu\/~jose.castellanosjoo\/'
+CURRENT_ICON_PATH=~/Pictures/icon.png
 
-.PHONY: build test clean
+.PHONY: build test clean deploy setBaseUrl setLogo
 
 build:
 	hugo -D
@@ -20,6 +21,5 @@ setBaseUrl:
 	sed -i "s/baseURL:.*/baseURL: $(BASE_URL)/g" ./config/_default/config.yaml
 
 setLogo:
-	@echo "The file should have 'icon.png' as name"
-	mv $1 ./assets/media/icon.png
+	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
 
