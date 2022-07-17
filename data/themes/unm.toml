@@ -4,43 +4,43 @@ name = "unm"
 [light]
 
   # Primary
-  primary = "#2E3440"
+  primary = "#C10037"
 
   link = "#2E3440"
   link_hover = "#BF616A"
-  # link_decoration = "underline"
+  link_decoration = "underline"
 
   # Menu
-  menu_primary = "#2E3440"
-  menu_text = "#ECEFF4"
+  menu_primary = "#2B2622"
+  menu_text = "#FFF9F2"
   menu_text_active = "#88C0D0"
-  menu_title = "#88C0D0"
+  menu_title = "#C10037"
 
   # Background
-  background = "#ECEFF4"
+  background = "#FFF9F2"
 
   # Home sections
-  home_section_odd = "#ECEFF4"
-  home_section_even = "#ECEFF4"
+  home_section_odd = "#FFF9F2"
+  home_section_even = "#FFF9F2"
 
 [dark]
 
   # Primary
-  primary = "#ECEFF4"
+  primary = "#C10037"
 
   link = "#ECEFF4"
   link_hover = "#EBCB8B"
-  # link_decoration = "underline"
+  link_decoration = "underline"
 
   # Menu
-  menu_primary = "#ECEFF4"
-  menu_text = "#2E3440"
+  menu_primary = "#FFF9F2"
+  menu_text = "#2B2622"
   menu_text_active = "#5E81AC"
-  menu_title = "#5E81AC"
+  menu_title = "#C10037"
 
   # Background
-  background = "#2E3440"
+  background = "#2B2622"
 
   # Home sections
-  home_section_odd = "#2E3440"
-  home_section_even = "#2E3440"
+  home_section_odd = "#2B2622"
+  home_section_even = "#2B2622"
