@@ -6,6 +6,7 @@ build:
 	hugo -D
 
 test:
+	firefox --new-tab http://localhost:1313/~jose.castellanosjoo/
 	hugo server -D
 
 clean:
@@ -17,3 +18,8 @@ deploy:
 
 setBaseUrl:
 	sed -i "s/baseURL:.*/baseURL: $(BASE_URL)/g" ./config/_default/config.yaml
+
+setLogo:
+	@echo "The file should have 'icon.png' as name"
+	mv $1 ./assets/media/icon.png
+
