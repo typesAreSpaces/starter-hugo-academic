@@ -1,5 +1,6 @@
 USERNAME='~jose.castellanosjoo'
-BASE_URL='https:\/\/www.cs.unm.edu\/$(USERNAME)\/'
+DOMAIN='cs.unm.edu'
+BASE_URL='https:\/\/www.$(DOMAIN)\/$(USERNAME)\/'
 CURRENT_ICON_PATH=~/Pictures/icon.png
 
 .PHONY: build test clean deploy setBaseUrl setLogo
@@ -16,7 +17,7 @@ clean:
 
 deploy:
 	@echo 'Make sure BASE_URL is correct.'
-	rsync -avz --delete public/ jose.castellanosjoo@moons.cs.unm.edu:~/public_html
+	rsync -avz --delete public/ $(USERNAME)@moons.$(DOMAIN):~/public_html
 
 setBaseUrl:
 	sed -i "s/baseURL:.*/baseURL: $(BASE_URL)/g" ./config/_default/config.yaml
