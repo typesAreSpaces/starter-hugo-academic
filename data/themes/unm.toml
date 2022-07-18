@@ -29,7 +29,7 @@ name = "unm"
   primary = "#C10037"
 
   link = "#ECEFF4"
-  link_hover = "#EBCB8B"
+  link_hover = "#BF616A"
   link_decoration = "underline"
 
   # Menu
