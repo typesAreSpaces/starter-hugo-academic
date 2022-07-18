@@ -2,6 +2,13 @@ USERNAME='~jose.castellanosjoo'
 DOMAIN='cs.unm.edu'
 BASE_URL='https:\/\/www.$(DOMAIN)\/$(USERNAME)\/'
 CURRENT_ICON_PATH=~/Pictures/icon.png
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox-bin
+endif
+ifeq ($(UNAME_S),Linux)
+	BROWSER=firefox
+endif
 
 .PHONY: build test clean deploy setBaseUrl setLogo
 
@@ -9,7 +16,8 @@ build:
 	hugo -D
 
 test:
-	firefox --new-tab http://localhost:1313/$(USERNAME)/
+	echo $(OSTYPE)
+	$(BROWSER) --new-tab http://localhost:1313/$(USERNAME)/
 	hugo server -D
 
 clean:
@@ -24,4 +32,3 @@ setBaseUrl:
 
 setLogo:
 	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
-
