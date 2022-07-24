@@ -6,8 +6,8 @@ name = "unm"
   # Primary
   primary = "#C10037"
 
-  link = "#2E3440"
-  link_hover = "#BF616A"
+  link = "#C10037"
+  link_hover = "#C10037"
   link_decoration = "underline"
 
   # Menu
@@ -28,8 +28,8 @@ name = "unm"
   # Primary
   primary = "#C10037"
 
-  link = "#ECEFF4"
-  link_hover = "#BF616A"
+  link = "#C10037"
+  link_hover = "#C10037"
   link_decoration = "underline"
 
   # Menu
