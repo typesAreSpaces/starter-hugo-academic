@@ -5,6 +5,33 @@
 :EXPORT_HUGO_SECTION: posts
 :END:
 
+** My first post: how to make posts (and academic websites) with hugo + emacs
+:PROPERTIES:
+:EXPORT_FILE_NAME: first_post
+:EXPORT_DATE: 2022-07-23
+:END:
+
+While building this website, I thought it would be convenient (at least for me) to document the process. Most of this material is taken from [[http://www.statslab.cam.ac.uk/~qz280/post/migrating/][this post]]. In fact, I was able to accomplish the resulting website thanks to it, but I believe there are a couple of things the author forgot to mention which could have been more useful. I hope this note helps others to find it useful as well as me.
+
+*** Tools
+
+**** Hugo (for building the main components of the website)
+
+TODO: Describe installation.
+
+**** Ox-hugo (for workflow for posting new notes)
+
+TODO: Describe installation.
+
+*** The building process
+
+TODO
+
+*** My workflow
+
+TODO
+
+
 ** Migrating my website to Hugo + Academic + ox-hugo               :Workflow:
 :PROPERTIES:
 :EXPORT_FILE_NAME: migrating
