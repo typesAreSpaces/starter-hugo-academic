@@ -27,6 +27,8 @@ TODO: Describe installation.
 
 TODO
 
+**** Navigation links: Check ./config/_default/menus.yaml
+
 *** My workflow
 
 **** Creating a publication
