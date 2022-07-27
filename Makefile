@@ -21,7 +21,7 @@ test:
 	hugo server -D
 
 clean:
-	@rm -rf build
+	@rm -rf public
 
 deploy:
 	@echo 'Make sure BASE_URL is correct.'
@@ -34,4 +34,4 @@ setLogo:
 	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
 
 updatePublications:
-	academic import --bibtex CV/publications.bib
+	academic import --bibtex ./static/CV/publications.bib

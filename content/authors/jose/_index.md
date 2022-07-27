@@ -61,7 +61,7 @@ social:
 # and uncomment the lines below.
   - icon: cv
     icon_pack: ai
-    link: personal/cv.pdf
+    link: CV/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
 email: 'jabelcastellanosjoo@unm.edu'
@@ -82,4 +82,4 @@ advised by
 <a href="https://sites.google.com/site/osoriomauri/">Prof. Mauricio Osorio Galindo</a>,
 working on the paraconsistent logic \(C_1\).
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "personal/cv.pdf" "newtab" >}} resumé {{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Download my {{< staticref "CV/cv.pdf" "newtab" >}} resumé {{< /staticref >}}.

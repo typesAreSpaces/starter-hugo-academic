@@ -7,9 +7,8 @@ cv.pdf: main.pdf
 	cp main.pdf cv.pdf
 
 main.pdf: $(FILES)
-	rubber --pdf $(PAPER)
 	latex main
-	bibtex main
+	#bibtex main
 	bibtex publications.aux
 	latex main
 	pdflatex main
@@ -18,9 +17,9 @@ main.pdf: $(FILES)
 
 clean:
 	@rubber --clean $(PAPER)
-	@rm -rf main.pdf
 	@rm -rf main.bbl
 	@rm -rf main.blg
+	@rm -rf main.pdf
 
 watch:
 	@while true; do inotifywait $(SRC); sleep 0.01; make all; done
