@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: A Single Proof of Classical Behaviour in da Costa’s $$C_n$$ Systems
+title: A Single Proof of Classical Behaviour in da Costa’s $C_n$ Systems
 subtitle: ''
 summary: ''
 authors:
@@ -10,7 +10,7 @@ authors:
 tags: []
 categories: []
 date: '2015-09-01'
-lastmod: 2022-07-27T14:08:02-06:00
+lastmod: 2022-07-27T14:54:10-06:00
 featured: false
 draft: false
 
@@ -28,7 +28,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2022-07-27T20:08:02.793656Z'
+publishDate: '2022-07-27T20:54:10.846069Z'
 publication_types:
 - '2'
 abstract: ''

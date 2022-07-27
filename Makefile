@@ -34,4 +34,4 @@ setLogo:
 	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
 
 updatePublications:
-	academic import --bibtex ./static/CV/publications.bib
+	academic --overwrite import --bibtex ./static/CV/publications.bib
