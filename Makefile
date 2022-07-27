@@ -32,3 +32,6 @@ setBaseUrl:
 
 setLogo:
 	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
+
+updatePublications:
+	academic import --bibtex CV/publications.bib
