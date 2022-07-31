@@ -1,0 +1,283 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2013 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,palatine]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% modern themes
+\moderncvstyle{banking}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black}                                % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+\usepackage[utf8]{inputenc}
+\usepackage{fontawesome}
+\usepackage{tabularx}
+\usepackage{ragged2e}
+% if you are not using xelatex ou lualatex, replace by the encoding you are using
+\usepackage{CJKutf8}                              % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.8]{geometry}
+\usepackage{multicol}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage{import}
+
+% personal data
+\name{Su Yinyin}{}
+% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
+\address{\faMapMarker\enspace  26D, Building H, Dachong City Garden, Nanshan District,}{Shenzhen, Guangdong Province, China (100190)}% optional, remove / comment the line if not wanted; the "postcode city" and and "country" arguments can be omitted or provided empty
+% \phone[mobile]{909-839-3097}                   % optional, remove / comment the line if not wanted
+% \phone[fixed]{01234 123456}                    % optional, remove / comment the line if not wanted
+%\phone[fax]{+3~(456)~789~012}                      % optional, remove / comment the line if not wanted
+% \email{xpan1@swarthmore.edu}                               % optional, remove / comment the line if not wanted
+% \homepage{shawnpan.me}                         % optional, remove / comment the line if not wanted
+% \extrainfo{}                 % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                                 % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+  
+\newcommand*{\customcventry}[7][.25em]{
+  \begin{tabular}{@{}l} 
+    {\bfseries #4}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\bfseries #5}
+  \end{tabular} \\
+  \begin{tabular}{@{}l} 
+    {\itshape #3}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #2}
+  \end{tabular}
+  \ifx&#7&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#7%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+\newcommand*{\customcvproject}[4][.25em]{
+%   \vfill\noindent
+  \begin{tabular}{@{}l} 
+    {\bfseries #2}
+  \end{tabular}
+  \hfill% move it to the right
+  \begin{tabular}{l@{}}
+     {\itshape #3}
+  \end{tabular}
+  \ifx&#4&%
+  \else{\\%
+    \begin{minipage}{\maincolumnwidth}%
+      \small#4%
+    \end{minipage}}\fi%
+  \par\addvspace{#1}}
+
+  
+\setlength{\tabcolsep}{12pt}
+\renewcommand{\labelitemi}{\small$\bullet$}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+\vspace*{-23mm}
+\begin{center}
+\begin{tabular}{ c c }
+ \faEnvelopeO\enspace \underline{{yinyinsu1991@gmail.com}} &  \faMobile\enspace \underline{+86-189-0243-8607}\\  
+\end{tabular}
+\end{center}
+
+\section{EDUCATION BACKGROUND}
+{\customcventry{Sept. 2014-Jun. 2017}{MA. SC, General and Fundamental Mechanics, Institute of Mechanics}{University of Chinese Academy of Sciences (UCAS)}{Beijing, China}{}{}}
+ 
+{\customcventry{ Sept. 2010-Jun. 2014}{B.Eng., Engineering Mechanics}{Northeastern University (NEU)}{Shenyang, China}{}{GPA: 86.38/100, Top(1/31)}}
+
+
+\section{PROFESSIONAL EXPERIENCE}
+{\customcventry{Jan. 2019-Present}{\textbf{Research assistant in MAE}}{Chinese University of Hong Kong (CUHK)}{Hong Kong, China}{}{}}
+  {\begin{itemize}
+    \item Built open-door task using 6-DOFs arm, simulated the task with QP controller and tuned the priorities of sub-tasks based on completeness of tasks automatically. 
+    \item Did the open-door experiment in UR5 and tested the proposed strategy in real environment.  
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customcventry{Dec. 2017-Dec. 2018}{\textbf{Research engineer in Institute of Robotics and Intelligent Manufacturing}}{Chinese University of Hong Kong, Shen Zhen (CUHKSZ)}{Shenzhen, China}{}{}}
+  {\begin{itemize}
+    \item 	Formed a team (IRIM-Solver) to participate in \textbf{2018 JD X-Robotics Challenge} as \textbf{team leader}, was in charge of team cooperation, resource allocation and overall designation, implemented grasp system and vision system. At last, our team stepped into the final competition and was awarded \textbf{RMB 10,000. (10 final teams in the world)}.
+    \item As a key member, did research on tuning the priority of multi-task controller automatically and related algorithm in project \textbf{Design, control and Scheduling of Logistical Service Robots in Complicated Environments} supported by \textbf{NSFC}. 
+    \item Wrote and applied the project \textbf{Research on Key Technologies of Heterogeneous Logistics Robot System Based on Integration of Human, Robot and Environment (RMB 3,000,000)} successfully supported by 
+    \textbf{Shenzhen Science and Technology Innovation Committee}.
+    \item Grasped the fundamental theory and related algorithm of machine learning, reinforcement learning and deep learning, and could program KNN, LR, SVM, Decision Tree, Bayes, RNN, CNN, Q-learning, Sarsa, DQN, DDPG and so on in PYTHON fluently. 
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customcventry{ Jul. 2017-Dec. 2017}{\textbf{Assistant engineer}}{China General Nuclear Research Institute Co., Ltd. (CGN)}{Shenzhen, China}{}{}}
+  {\begin{itemize}
+    \item Designed the constant volume of stabilizer in primary loop of 3-rd generation home-made nuclear power plant HPR1000.
+    \item As a director, do research on fluid-structure coupling of \textbf{anti-sloshing design of liquid tank in marine nuclear reactor (RMB 50,000)} supported by \textbf{Youth Science and Technology Fund, CGN}.
+  \end{itemize}
+}
+\section{RESEARCH EXPERIENCE (Master’s Period)}
+
+% {\customcvproject{Amazing Project 1}{Aug 2017 - Present}
+%   {\begin{itemize}
+%     \item Ran custom Minecraft mods on CentOS and Debian servers
+%     \item Reverse engineered obfuscated Java using a decompiler and reflection
+%   \end{itemize}
+%   }
+% }
+
+% {\customcvproject{Amazing Project 2}{Feb 2016 – May 2017}
+% {\begin{itemize}
+%   \item Began a group to create the first 36 hour student-run hackathon ever held at Illinois
+%   \item Led 50 staff to raise \$175,000 for HackIllinois, managing relationships with 60+ sponsors
+%   \item Plan events to increase social interaction among ACM members, as well as events to foster the spirit of computer science at Illinois
+% \end{itemize}
+% }
+
+% {\customcvproject{Amazing Project 3}{Jan 2015 – May 2015}
+% {\begin{itemize}
+%   \item Assist in recruiting potential and admitted students to the UIUC computer science program
+%   \item Attend information sessions, admitted student Q\&A’s, and student lunches to generate interest in the Illinois Computer Science department
+% \end{itemize}
+% }
+% }
+{\customcventry{ May. 2016- Jul. 2017}{\textbf{Supported by China Astronaut Research and Training Center and Haier}}{Washing Machine in Space Station (RMB 300,000)}{Beijing, China}{}{}}
+  {\begin{itemize}
+    \item Developed on-orbit cleaning technology in our space station in order to save water and electricity, separate gas and liquid under microgravity.
+    \item Proposed centrifugal cone-shaped two-phase washing machine and design the structure of roller and impeller for this device.
+    \item Simulated interior flow field of the new washing machine with CFD and find the more optimal motion plan of roller and impeller.
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customcventry{  Jun. 2015- Dec.2016}{\textbf{Supported by China Academy of Space Technology}}{Surface Tension Vaned Tank of Satellite Propellant (RMB 820,000)}{Beijing, China}{}{}}
+  {\begin{itemize}
+    \item As a director, designed a new structure of satellite propellant tank and especially propose the inner \textbf{Propellant Management Device} and its distribution mode.  
+    \item Designed and conducted microgravity experiments of tank in drop tower and do related numerical simulations to improve its structure.
+    \item In addition, invited to join in \textbf{Space Tea Cup in Shenzhou 11} and in charge of \textbf{drop-tower} experiments.
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customcventry{Oct. 2015- Dec. 2016}{\textbf{The first responsible person for subsystem in JSLC}}{TianGong2 Space Laboratory (TG2)}{Beijing and Jiuquan, China}{}{}}
+  {\begin{itemize}
+    \item  As a member, designed the structure of tank body for \textbf{Liquid Bridge Subsystem in TG2}.
+    \item  Testified and explained the problem of unusual big temperature difference in the beginning of starting system by numerical simulation. 
+    \item  In charge of electrical test and mechanical vibration test before launch. Founded and solved \textbf{4 significant problems} and \textbf{approved by the chief designer of system}. 
+  \end{itemize}
+}
+
+\setlength{\parskip}{0.5em}
+
+{\customcventry{Sept. 2015-Apr. 2016}{\textbf{Ground technical support in the Flight Control Center}}{ShiJian10 Microgravity Satellite (SJ10)}{Beijing and Jiuquan, China}{}{}}
+  {\begin{itemize}
+    \item  Responsible for electrical test and thermal balance test in NSSC, monitor the data from SJ10.
+    \item  For the results from \textbf{Thermocapillary-convection Annular Liquid Pool Device} in SJ10, did the ground matching experiment and numerical simulation.
+  \end{itemize}
+}
+
+
+\section{PUBLICATIONS}
+
+% {\customcventry{ Oct. 2015- Dec. 2016}{Technology Analyst}{Tata Consultancy Servies Limited}{Kolkata, India}{}
+% {\begin{itemize}
+%   \item Designed and built the first version of infrastructure code base which built the entire environment of SDLC at runtime. This reduced the development teams’ monthly expenses on AWS servers by 100 thousand dollars.
+%   \item Designed and a centralized build strategy for all the software components of our client. The monolithic design of our build module brought new business to TCS
+% \end{itemize}
+% }
+
+% }
+% \begin{flushleft}
+% \textit{Technology Analyst}\hspace{285.0pt}\textbf{Edinburgh, Scotland}
+% \begin{itemize}
+%     \item Built a continuous delivery model for my client’s Development Team.\hspace{30.0pt}\textit{July 2015 – June 2016}\\ The incremental development method reduced three-man days of development time on a 14-day sprint.
+%     \item Created Production like testing environments in AWS Cloud for sprint teams to enhance test-driven development. The new process promoted quality development culture. The number of defects were reduced by one-fifth. The time saved in fixing bugs increased the development time by 15% per week.
+% \end{itemize}
+% \end{flushleft}
+
+% \begin{flushleft}
+% \textit{Systems Engineer}\hspace{315.0pt}\textbf{Bangalore, India}
+% \begin{itemize}
+%     \item Developed a comprehensive shell script that remotely monitored\hspace{45.0pt}\textit{March 2012 – July 2015}\\ the health of all the production services. The script visualized the current state of the different production services in a dashboard. The transparent report dashboard decreased production outage to one two incidents in a financial quarter.
+%     \item Encapsulated the build scripts in a Jenkins automation server. The user-friendly Jenkins GUI empowered the developers to trigger new builds themselves. The DevOps effort saved was 2 man-days every week.
+% \end{itemize}
+% \end{flushleft}
+  {\begin{itemize}
+    \item  \textbf{Yinyin Su}, Yuquan Wang and Abderrahmane Kheddar. “Sample-efficient learning of soft task priorities through Bayesian optimization”, in \textbf{Humanoids}, 2018 IEEE-RAS 18th International Conference.
+    \item Kang Qi, Wang Jia, Duan, Li, \textbf{Su Yinyin}, He Jianwu, Wu Di, Hu Wenrui. The volume ratio effect on flow patterns and transition processes of thermocapillary convection. \textbf{Journal of Fluid Mechanic}. (\textbf{accepted})
+    \item \textbf{Su Yinyin}, Wu Di, Duan Li, Kang Qi. Numerical Simulation of Flow Field in Centrifugal Cone-shaped Two - phase Washing Machine under Microgravity. \textbf{Manned Spaceflight}, 2018,24(01):117-126.   
+    \item Yongqiang Li, Mingzhu Hu, Ling Liu, \textbf{YinYin Su}, Li Duan, Qi Kang. Study of Capillary Driven Flow in an Interior Corner of Rounded Wall under Microgravity. \textbf{Microgravity Science and Technology}, 27:193-205, 2015.
+  \end{itemize}
+}
+\section{IT \& ENGLISH SKILLS}
+    \begin{itemize}
+        \item CET-6: 476
+        \item IT: Extensive knowledge of Linux, ROS, Python, Matlab, R Language, C and could use Python packages including Tensorflow, Numpy, pandas, Sciki-learn, keras and so on fluently.
+        \item Outstanding in mechanics theories, especially FEM and CFD. Experienced in FLUENT, FLOW-3D ABAQUS, ANSYS, ICEM, AutoCAD, SolidWorks, CATIA, Office.
+    \end{itemize}
+
+\section{AWARDS \& ACHIEVEMENTS}
+\begin{minipage}{\maincolumnwidth}%
+    	\begin{itemize}
+          \item 全国徐芝纶力学优秀学生奖 (2 Candidates/province, once every two years) \hfill {\itshape Nov. 2014}
+          \item National Scholarship \hfill {\itshape Nov.2013}
+          \item National Scholarship for Encouragement \hfill {\itshape Nov.2012}
+          \item The First Prize Scholarship (NEU) \hfill {\itshape twice}
+          \item The Second Prize Scholarship (NEU) \hfill {\itshape three times}
+          \item Outstanding Graduates (NEU) \hfill {\itshape May.2014}
+          \item Honorable Mention in Mathematical Contest in Modeling \hfill {\itshape Mar.2013}
+		\end{itemize}%
+\end{minipage}%
+
+      
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{*}
+\bibliographystyle{plain}
+\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+%-----       letter       ---------------------------------------------------------
+\end{CJK*}
+\end{document}
+
+
+%% end of file `template.tex'.

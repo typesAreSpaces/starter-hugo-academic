@@ -1,0 +1,214 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.83]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Utkarsh} % Your first name
+\familyname{Raj} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Internship Resume}
+%\address{24//168 Lo Duc St.}{Hamirpur, Himachal Pradesh}
+%\mobile{(+91) 9882541575}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+%\email{clearnote01@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"Faith sees a beautiful blossom in a bulb" - William Arthur Ward}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%-----------------
+%   Contact Information
+%-----------------
+
+\section{Contact Information}
+
+\cvitem{\textbf{}Email:}{clearnote01@gmail.com \textit{} }
+\cvitem{\textbf{}Phone:}{+91 9882541575, 9454901694 \textit{} }
+\cvitem{\textbf{}Website:}{
+				http://clearnote01.github.io
+                }
+\cvitem{}{https://www.linkedin.com/in/utkarshraj \textit{} }
+
+
+%\cventry{2008--Present}{Bachelor of Computer Science}{Hanoi University of Science and Technology}{School of Information and Communication Technology, Hanoi.}{\textit{GPA -- 8.0}}{}  % Arguments not required can be left empty
+%\cvitem{}{Class ICT56 -- ICT Program: program for Gifted Students; the curriculum is conducted in \textbf{English}.}
+
+\renewcommand{\listitemsymbol}{~~~~} % Changes the symbol used for lists
+
+
+
+
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cvitem{2014--Present}{\textbf{Bachelor of Computer Science:} National Institute of Technology, Himachal Pradesh }
+%\cventry{2008--Present}{Bachelor of Computer Science}{Hanoi University of Science and Technology}{School of Information and Communication Technology, Hanoi.}{\textit{GPA -- 8.0}}{}  % Arguments not required can be left empty
+%\cvitem{}{Class ICT56 -- ICT Program: program for Gifted Students; the curriculum is conducted in \textbf{English}.}
+\renewcommand{\listitemsymbol}{~~~~} % Changes the symbol used for lists
+\cvlistdoubleitem{CGPA: 7.63}{Highest SGPA: 8.2}
+
+\cvitem{2014}{\textbf{Higher Secondary Education:} Woodbine Gardenia School, Kanpur, Uttarpradesh.}
+\cvlistdoubleitem{Marks in CS: 99/100}{Overall Percentage: 93.8\%}
+%\cventry{2008--2011}{High School Education}{Tran Nhan Tong High School}{Hanoi}{\textit{}}{}
+%\cvitem{}{Average Point: 8.9/10 - 1\textsuperscript{st} rank in the school.}
+
+\cvitem{2012}{\textbf{High School Education:} Woodbine Gardenia School, Kanpur, Uttarpradesh.}
+\cvlistdoubleitem{Grade Point: 10.0/10.0}{}
+
+%\cventry{2003--2008}{Secondary School Education}{Le Quy Don Secondary School}{Hoa Binh City}{\textit{}}{}
+
+%--------------------------------------
+%  Interests
+%--------------------------------------
+
+\section{Areas of Interest}
+
+\cvitem{\textbf{}}{Full-stack development, Web designing, Software Development, }
+\cvitem{}{Data mining, Open Source}
+%\cvitem{\textbf{}}{, Software Development}
+%/cvitem{\textbf{}}{}
+
+
+
+%--------------------------------------
+%  Projects
+%--------------------------------------
+
+
+\section{Projects}
+
+\cvitem{Full-stack Web}{\textbf{FitMeUp:} Submission for competition organised by RedHat foundation, New York. The project was designed as a Fitness tracker, using Recursive Neural Network for personalized health tracking and suggestion. My contribution was in writing the complete backend(NodeJS) and in designing the website. Used expressJS for http server, websockets for bi-directional data transfer, MongoDB for database and CSS3 property flex for writing responsive site for all platforms. }
+\renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+\cvlistitem{https://github.com/clearnote01/nodejs-ex}
+\cvitem{Automation}{\textbf{ProxyHelper:} A automatic proxy configuration tool for linux, uses parallel UDP connection for evaluating available proxy servers and selects the one with least latency. Works automatically by a hook on if-up.d interface, activating on connection to internet. Support for proxy setting for npm, git, apt, pip \& many more. Future plans to launch it on debian repository. }
+\renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+\cvlistitem{https://github.com/clearnote01/ProxyHelper}
+
+\cvitem{Scraping \& Data Analysis}{\textbf{Sentikart:} Submission for Indiahacks hackathon organised by Hacker Earth, 2016. Bagged 7th rank out over 20000 participants. Performs real-time analysis of customer reviews on e-commerce sites. My contribution was in writing a modified Naive Bayes Classifier for sentimental analysis of reviews and a asynchronous web scraper for very fast data collection.}
+\renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+\cvlistitem{https://github.com/clearnote01/Sentikart}
+
+\cvitem{Websockets}{\textbf{AsynChat:} A simple single page chat web-application with anonymous chat and color code for users. Written in nodeJS along with websockets for fast, minimum overhead, message transfer.}
+\renewcommand{\listitemsymbol}{} % Changes the symbol used for lists
+\cvlistitem{https://github.com/clearnote01/asynchat}
+
+\cvitem{}{}
+%----------------------------------------------------------------------------------------
+%	SKILLS SECTION
+%----------------------------------------------------------------------------------------
+%\vspace{14mm}
+\section{Technical Skills}
+
+\subsection{Languages Used}
+
+\cvitem{} {Python, JavaScript, Haskell(basic), Ruby(basic), }
+\cvitem{}{\textsc{}TypeScript, C, C++, HTML, CSS}
+
+\subsection{Web Technologies}
+
+\cvitem{}{NodeJS, AngularJS, ExpressJS, MongoDB, Socket.io}
+\cvitem{}{Django, Flask, Sqlite}
+\subsection{Software Packages}
+
+\cvitem{} {Wordpress, Linux, Archlinux, \textsc{vim}, \textsc{git}, \LaTeX}
+
+\cvitem{}{}
+\section{Honors \& Achievements}
+%---------------------------------------------------------------------
+%	COMMUNICATION SKILLS SECTION
+%------------------------------------------------------------------------
+
+\cvitem{2016}{7th rank out of 20,000 participants in Indiahacks hackathon}
+\cvitem{2016}{2nd rank in Software Development competition organised in Nimbus, NIT}
+\cvitem{2014}{\textsc{JEE MAIN} rank: 11213}
+\cvitem{2010}{\textsc{NTSE} 1st stage qualifier}
+
+%----------------------------------------------------------------------------------------
+%	RESEARCH SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Research Interests}
+
+%\cvitem{}{Heuristic algorithm \& its application.}
+%\cvitem{}{Data mining.}
+%\cvitem{}{Internet Security.}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+\cvitem{}{}
+\section{Personal Skills}
+\cvitem{}{Quick learner, positive attitude}
+\cvitem{}{Full commitment to work}
+\cvitem{}{Good decision making and analytical skills}
+
+
+%----------------------------
+%   Extra curricular
+%----------------------------
+\cvitem{}{}
+\section{Extra-curricular activities}
+\cvitem{GLUG-NITH}{Active member of GNU/Linux User Group at College}
+\cvitem{}{Contributor in various college level projects.}
+\cvitem{CSEC}{Executive member of CSE Club in college.}
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+\cvitem{}{}
+\section{Recreational Interests}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{Japanese Animations \& Comics}{Reading historical accounts}
+\cvlistdoubleitem{Photography}{German Language}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-3] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
