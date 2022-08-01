@@ -3,6 +3,8 @@ PAPER=main.tex
 OUTPUT=$(PAPER:.tex=.pdf)
 FILES=$(wildcard ./*.tex)
 
+all: cv.pdf
+
 cv.pdf: main.pdf
 	cp main.pdf cv.pdf
 
