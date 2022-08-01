@@ -20,8 +20,9 @@ bio: My research interests include distributed robotics, mobile computing and pr
 interests:
   - Formal Verification
   - Archimedean Quadratic Modules
-  - Groebner basis algorithms
-  - Quantifier-free interpolation algorithms for decidable logics
+  - Groebner Basis Algorithms
+  - Quantifier-free Interpolation Algorithms for Decidable Logics
+  - Non-classical Logics
 
 # Education to show in About widget
 education:
