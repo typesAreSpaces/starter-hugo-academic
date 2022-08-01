@@ -3,9 +3,18 @@
 \usepackage{multibib}
 \usepackage{hyperref}
 \usepackage{import}
+\usepackage{xpatch}
+\makeatletter
+\newcommand\removebibheader
+  {\xpatchcmd\std@thebibliography
+    {\section*{\refname}%
+     \@mkboth{\MakeUppercase\refname}{\MakeUppercase\refname}%
+    }{}{}{}%
+  }
+\makeatother
 
 \newcommand{\grob}{Gr{\"o}bner }
-\newcites{publications}{Publications}
+\newcites{publications}{k}
 
 \author{2700 Campus Blvd NE UNM SRC 1385\\
 Albuquerque, NM 87106\\
@@ -19,14 +28,15 @@ jabelcastellanosjoo@unm.edu}
 
 \import{sections}{personal-statement}
 \import{sections}{education}
-\import{sections}{research-experience}
 \import{sections}{work-experience}
-\import{sections}{skills}
 \import{sections}{publications}
 \import{sections}{talks}
+\import{sections}{software}
 \import{sections}{workshops}
+\import{sections}{skills}
+\import{sections}{teaching}
+\import{sections}{reviewer-work}
 \import{sections}{scholarships}
-\import{sections}{prizes}
 \import{sections}{societies}
 \import{sections}{extra}
 
