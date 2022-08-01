@@ -1,7 +1,7 @@
 SRC=$(wildcard *.tex)
 PAPER=main.tex
 OUTPUT=$(PAPER:.tex=.pdf)
-FILES=$(wildcard ./*.tex)
+FILES=$(wildcard ./*.tex) $(wildcard ./sections/*.tex) 
 
 all: cv.pdf
 
@@ -10,8 +10,8 @@ cv.pdf: main.pdf
 
 main.pdf: $(FILES)
 	latex main
-	#bibtex main
-	#bibtex publications.aux
+	#bibtex main.aux
+	bibtex publications.aux
 	latex main
 	pdflatex main
 
