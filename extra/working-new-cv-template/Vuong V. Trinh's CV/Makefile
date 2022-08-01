@@ -11,7 +11,7 @@ cv.pdf: main.pdf
 main.pdf: $(FILES)
 	latex main
 	#bibtex main
-	bibtex publications.aux
+	#bibtex publications.aux
 	latex main
 	pdflatex main
 
