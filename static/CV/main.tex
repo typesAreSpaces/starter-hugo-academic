@@ -2,6 +2,7 @@
 \usepackage{amsmath, amsthm, amssymb, amsfonts}
 \usepackage{multibib}
 \usepackage{hyperref}
+\usepackage{import}
 
 \newcommand{\grob}{Gr{\"o}bner }
 \newcites{publications}{Publications}
@@ -16,17 +17,17 @@ jabelcastellanosjoo@unm.edu}
 
 \maketitle
 
-\input{PersonalStatement}
-\input{Education}
-\input{ResearchExperience}
-\input{WorkExperience}
-\input{Skills}
-\input{Publications}
-\input{Talks}
-\input{Workshops}
-\input{Scholarships}
-\input{Prizes}
-\input{Societies}
-\input{Extra}
+\import{sections}{personal-statement}
+\import{sections}{education}
+\import{sections}{research-experience}
+\import{sections}{work-experience}
+\import{sections}{skills}
+\import{sections}{publications}
+\import{sections}{talks}
+\import{sections}{workshops}
+\import{sections}{scholarships}
+\import{sections}{prizes}
+\import{sections}{societies}
+\import{sections}{extra}
 
 \end{document}
