@@ -23,11 +23,15 @@ TODO: Describe installation.
 
 TODO: Describe installation.
 
-*** The building process
+*** The building/basic-editing process
 
 TODO
 
 **** Navigation links: Check ./config/_default/menus.yaml
+
+**** Footer (./config/_default/params.yaml):
+***** appearance section (where to store themes)
+***** footer section (replace Me by Author's name)
 
 *** My workflow
 
