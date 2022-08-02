@@ -25,7 +25,7 @@ content:
       captcha: false
 
   # Contact details (edit or remove options as required)
-  email: jabelcasetellanosjoo@unm.edu
+  email: jabelcastellanosjoo@unm.edu
   phone: 505 730 5326
   address:
     street: 450 Serra Mall
