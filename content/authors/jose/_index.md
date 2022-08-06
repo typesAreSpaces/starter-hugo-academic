@@ -14,7 +14,7 @@ organizations:
     url: https://cs.unm.edu/
 
 # Short bio (displayed in user profile at end of posts)
-bio: My research interests include distributed robotics, mobile computing and programmable matter.
+bio: My research interests include computer algebra and formal methods
 
 # Interests to show in About widget
 interests:
@@ -54,8 +54,7 @@ social:
     link: https://github.com/typesAreSpaces
   - icon: linkedin
     icon_pack: fab
-# TODO: fix this
-    link: https://www.linkedin.com/
+    link: https://www.linkedin.com/in/joseabelcj/
 
 # Link to a PDF of your resume/CV.
 # To use: copy your resume to `static/uploads/resume.pdf`, enable `ai` icons in `params.toml`,
@@ -81,6 +80,6 @@ I obtained my bacherlor's degree in electronics engineering from
 <a href="https://www.udlap.mx/web/en/">Universidad de las Americas Puebla</a>
 advised by 
 <a href="https://sites.google.com/site/osoriomauri/">Prof. Mauricio Osorio Galindo</a>,
-working on the paraconsistent logic \(C_1\).
+working on the paraconsistent logic $C_1$.
 
-{{< icon name="download" pack="fas" >}} Download my {{< staticref "CV/cv.pdf" "newtab" >}} resumé {{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Here is my {{< staticref "CV/cv.pdf" "newtab" >}} resumé {{< /staticref >}}.

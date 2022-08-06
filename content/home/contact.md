@@ -28,29 +28,29 @@ content:
   email: jabelcastellanosjoo@unm.edu
   phone: 505 730 5326
   address:
-    street: 450 Serra Mall
-    city: Stanford
-    region: CA
-    postcode: '94305'
+    street: 2700 University Blvd NE
+    city: Albuquerque
+    region: NM
+    postcode: '87106'
     country: United States
     country_code: US
-  coordinates:
-    latitude: '37.4275'
-    longitude: '-122.1697'
-  directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-  office_hours:
-    - 'Monday 10:00 to 13:00'
-    - 'Wednesday 09:00 to 10:00'
-  appointment_url: 'https://calendly.com'
+#coordinates:
+#    latitude: '37.4275'
+#longitude: '-122.1697'
+  directions: Farris Building, Office 3155 on Floor 3
+#office_hours:
+#    - 'Monday 10:00 to 13:00'
+#    - 'Wednesday 09:00 to 10:00'
+#  appointment_url: 'https://calendly.com'
   contact_links:
     - icon: twitter
       icon_pack: fab
       name: DM Me
-      link: 'https://twitter.com/Twitter'
-    - icon: video
-      icon_pack: fas
-      name: Zoom Me
-      link: 'https://zoom.com'
+      link: 'https://twitter.com/Jose_Abel34'
+#- icon: video
+#      icon_pack: fas
+#      name: Zoom Me
+#      link: 'https://zoom.com'
 
 design:
   columns: '2'
