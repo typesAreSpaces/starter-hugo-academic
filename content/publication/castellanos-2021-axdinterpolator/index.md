@@ -5,14 +5,14 @@ title: 'AXDInterpolator: A Tool for Computing Interpolants for Arrays with MaxDi
 subtitle: ''
 summary: ''
 authors:
-- J Castellanos Joo
+- Jose Abel Castellanos Joo
 - Silvio Ghilardi
 - Alessandro Gianola
 - Deepak Kapur
 tags: []
 categories: []
 date: '2021-01-01'
-lastmod: 2022-07-27T14:54:10-06:00
+lastmod: 2022-08-06T14:16:58-06:00
 featured: false
 draft: false
 
@@ -30,7 +30,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2022-07-27T20:54:10.691126Z'
+publishDate: '2022-08-06T20:16:56.225259Z'
 publication_types:
 - '1'
 abstract: ''

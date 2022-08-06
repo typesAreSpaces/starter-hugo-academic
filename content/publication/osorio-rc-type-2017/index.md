@@ -1,16 +1,16 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: Equivalence among RC-type paraconsistent logics
+title: Equivalence among $RC$-type paraconsistent logics
 subtitle: ''
 summary: ''
 authors:
 - Mauricio Osorio
-- José Abel Castellanos Joo
+- Jose Abel Castellanos Joo
 tags: []
 categories: []
 date: '2017-01-01'
-lastmod: 2022-07-27T14:54:10-06:00
+lastmod: 2022-08-06T14:16:58-06:00
 featured: false
 draft: false
 
@@ -28,7 +28,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2022-07-27T20:54:10.769974Z'
+publishDate: '2022-08-06T20:16:58.812373Z'
 publication_types:
 - '2'
 abstract: ''
