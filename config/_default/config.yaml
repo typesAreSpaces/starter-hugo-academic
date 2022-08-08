@@ -5,6 +5,7 @@
 
 title: Jose Abel Castellanos Joo # Website name
 baseURL: 'https://www.cs.unm.edu/~jose.castellanosjoo/'
+canonifyURLS: true
 
 ############################
 ## LANGUAGE

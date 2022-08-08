@@ -45,7 +45,9 @@ TODO: Describe installation.
 
 TODO
 
-**** Navigation links: Check ./config/_default/menus.yaml
+**** Navigation links:
+***** Check ./config/_default/menus.yaml
+***** Add the option `canonifyURLS: true` otherwise the page header doesn't link to the right home page.
 
 **** Footer (./config/_default/params.yaml):
 ***** appearance section (where to store themes)
