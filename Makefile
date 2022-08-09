@@ -16,9 +16,8 @@ build:
 	hugo -D
 
 test:
-	echo $(OSTYPE)
+	hugo server -D &
 	$(BROWSER) --new-tab http://localhost:1313/~$(USERNAME)/
-	hugo server -D
 
 clean:
 	@rm -rf public
