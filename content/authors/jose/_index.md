@@ -47,8 +47,7 @@ social:
     link: https://twitter.com/Jose_Abel34
   - icon: graduation-cap # Alternatively, use `google-scholar` icon from `ai` icon pack
     icon_pack: fas
-# TODO: fix this
-    link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+    link: https://scholar.google.com/citations?user=xvuJBMMAAAAJ&hl=en
   - icon: github
     icon_pack: fab
     link: https://github.com/typesAreSpaces
