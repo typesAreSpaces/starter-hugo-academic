@@ -13,7 +13,7 @@ title: 'Teaching Assistant Experience'
 subtitle: 
 ---
 
-- Fall 2022; [CS 241 - Data Organization using C] with [Prof. Soraya Abad-Mota](https://www.cs.unm.edu/directory/faculty-profiles/soraya-abad-mota.html)
+- Fall 2022; CS 241 - Data Organization using C with [Prof. Soraya Abad-Mota](https://www.cs.unm.edu/directory/faculty-profiles/soraya-abad-mota.html)
 - Fall 2019; [CS 530 - Geometric and Probabilistic Methods in Computer Science](https://www.cs.unm.edu/~williams/cs530f15.html) with [Prof. Lance Williams](https://www.cs.unm.edu/~williams/)
 - Spring 2022; [CS 429/529 - Machine Learning](https://www.cs.unm.edu/~estrada/cs529.php) with [Prof. Trilce Estrada](https://www.cs.unm.edu/~estrada/)
 - Fall 2019; [CS 530 - Geometric and Probabilistic Methods in Computer Science](https://www.cs.unm.edu/~williams/cs530f15.html) with [Prof. Lance Williams](https://www.cs.unm.edu/~williams/)
