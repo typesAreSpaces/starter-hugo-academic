@@ -7,29 +7,38 @@
 
 ** The CDCL algorithm describes many human features (to some extend)
 :PROPERTIES:
-:EXPORT_FILE_NAME: first_post
-:EXPORT_DATE: 2022-07-23
+:EXPORT_FILE_NAME cdcl_and_life :EXPORT_DATE: 2022-07-23
 :END:
 
-** Some comments about intuitionistic logic
+** A not not Brief Introduction to Kripke Semantics for Propositional Intuitionistic Logic
 :PROPERTIES:
-:EXPORT_FILE_NAME: first_post
-:EXPORT_DATE: 2022-07-23
+:EXPORT_FILE_NAME: not_not_kripe_intro :EXPORT_DATE: 2022-07-23
 :END:
+
+*** Abstract 
+
+In this paper we motivate the study of Kripke semantics for propositional
+intuitionistic logic by showing fundamental properties at the proof theory level
+using $n+1$-valued logics. Some non-theorems of propositional intuitionistic
+logic (like the excludded middle principle) are discussed using this approach.
 
 ** Why Zorn's lemma is my favorite lemma
 :PROPERTIES:
-:EXPORT_FILE_NAME: first_post
-:EXPORT_DATE: 
+:EXPORT_FILE_NAME: my_favorite_lemma
+:EXPORT_DATE:
 :END:
 
 ** My first post: how to make posts (and academic websites) with hugo + emacs
 :PROPERTIES:
-:EXPORT_FILE_NAME: first_post
-:EXPORT_DATE: 2022-07-23
+:EXPORT_FILE_NAME: first_post :EXPORT_DATE: 2022-07-23
 :END:
 
-While building this website, I thought it would be convenient (at least for me) to document the process. Most of this material is taken from [[http://www.statslab.cam.ac.uk/~qz280/post/migrating/][this post]]. In fact, I was able to accomplish the resulting website thanks to it, but I believe there are a couple of things the author forgot to mention which could have been more useful. I hope this note helps others to find it useful as well as me.
+While building this website, I thought it would be convenient to take some notes
+of the process. Most of this material is taken from [[http://www.statslab.cam.ac.uk/~qz280/post/migrating/][this post]]. I was able to
+accomplish the resulting website thanks to it, but I believe there are a couple
+of things the author forgot to mention or simply the [[https://academic-demo.netlify.app][academic theme]] has updated
+which are not mentioned in the original post. I hope this note helps others
+building their website using the [[https://academic-demo.netlify.app][Hugo Academic theme]].
 
 *** Tools
 
@@ -56,99 +65,97 @@ TODO
 *** My workflow
 
 **** Creating a publication
-TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add the pdf matching the folder's name.
+TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add
+the pdf matching the folder's name.
 
 **** Adding a post
 
 
 ** Migrating my website to Hugo + Academic + ox-hugo               :Workflow:
 :PROPERTIES:
-:EXPORT_FILE_NAME: migrating
-:EXPORT_DATE: 2022-07-15
+:EXPORT_FILE_NAME: migrating :EXPORT_DATE: 2022-07-15
 :END:
 
-Being stuck at home during the pandemic, as miserable as it is, actually
-helps me to redesign my working environment. One of the many outcomes
-is this new personal website powered by the [[https://sourcethemes.com/academic/][Academic theme]] for [[https://gohugo.io/][Hugo]]. I
-hope you will agree with me that it just looks awesome!
+Being stuck at home during the pandemic, as miserable as it is, actually helps
+me to redesign my working environment. One of the many outcomes is this new
+personal website powered by the [[https://sourcethemes.com/academic/][Academic theme]] for [[https://gohugo.io/][Hugo]]. I hope you will agree
+with me that it just looks awesome!
 
-For the rest of this blog post, I will explain the workflow to
-generate this website. I hope you may find it useful when designing
-your own website.
+For the rest of this blog post, I will explain the workflow to generate this
+website. I hope you may find it useful when designing your own website.
 
 {{% toc %}}
 
 *** The Hugo framework
 
-I admire the front-end web developers who still hand write HTML and
-CSS, but those are simply too much for me. If you are like me who just
-wants a personal website that can keep track of one's work, chances
-are you would like to use some [[https://en.wikipedia.org/wiki/Web_template_system#Static_site_generators][static site generator]]. When I was young
-and had my first encounter with the internet, [[https://en.wikipedia.org/wiki/Microsoft_FrontPage][Microsoft Frontpage]] and
-[[https://en.wikipedia.org/wiki/Adobe_Dreamweaver][Dreamweater]] were the most popular website generator.
+I admire the front-end web developers who still hand write HTML and CSS, but
+those are simply too much for me. If you are like me who just wants a personal
+website that can keep track of one's work, chances are you would like to use
+some
+[[https://en.wikipedia.org/wiki/Web_template_system#Static_site_generators][static
+site generator]]. When I was young and had my first encounter with the internet,
+[[https://en.wikipedia.org/wiki/Microsoft_FrontPage][Microsoft Frontpage]] and
+[[https://en.wikipedia.org/wiki/Adobe_Dreamweaver][Dreamweater]] were the most
+popular website generator.
 
 **** Static site generators
 
-But we are well past that time and there are many much better choices
-today. One great framework is the /Markdown/, a lightweight markup
-language that is used in [[https://guides.github.com/features/mastering-markdown/][GitHub readme pages]] and deeply integrated
-with statistical computing with the [[https://rmarkdown.rstudio.com/][R Markdown]]. Many static site
-generators (including [[https://jekyllrb.com/][Jekyll]] and [[https://gohugo.io/][Hugo]]) are able to automatically
-generate HTML codes from Markdown. This is a giant life-saver because
-Markdown is so much more readable.
+But we are well past that time and there are many much better choices today. One
+great framework is the /Markdown/, a lightweight markup language that is used in
+[[https://guides.github.com/features/mastering-markdown/][GitHub readme pages]]
+and deeply integrated with statistical computing with the
+[[https://rmarkdown.rstudio.com/][R Markdown]]. Many static site generators
+(including [[https://jekyllrb.com/][Jekyll]] and [[https://gohugo.io/][Hugo]])
+are able to automatically generate HTML codes from Markdown. This is a giant
+life-saver because Markdown is so much more readable.
 
-After some brief research I decided to use Hugo. Based on my reading,
-Hugo is renowned as "the world's fastest framework for building
-websites" and many developers were extremely happy about it. But for
-me, the killer was two extensions to Hugo: the Academic theme that
-implements many use features for academic researchers, and the
-[[https://ox-hugo.scripter.co/][ox-hugo]] backend that exports ~.org~ files straight to Hugo-compatible
-Markdown files. As an academic who already uses Emacs for most of the
-day-to-day work, these features are extremely convenient for me.
+After some brief research I decided to use Hugo. Based on my reading, Hugo is
+renowned as "the world's fastest framework for building websites" and many
+developers were extremely happy about it. But for me, the killer was two
+extensions to Hugo: the Academic theme that implements many use features for
+academic researchers, and the [[https://ox-hugo.scripter.co/][ox-hugo]] backend
+that exports ~.org~ files straight to Hugo-compatible Markdown files. As an
+academic who already uses Emacs for most of the day-to-day work, these features
+are extremely convenient for me.
 
-Installing Hugo in Mac OS X is straightforward with [[https://brew.sh/][homebrew]]. Simply
-run
+Installing Hugo in Mac OS X is straightforward with
+[[https://brew.sh/][homebrew]]. Simply run
 
 #+BEGIN_SRC sh
-brew install hugo
-#+END_SRC
+brew install hugo #+END_SRC
 
 **** Content management in Hugo
 
-Let's first take a look at how Hugo works. The most useful thing to
-know is Hugo's [[https://gohugo.io/content-management/organization/][organization of content source]]. In particular, the most
-important is the ~content~ folder, which contains all the Markdown
-files needed to generate the website. Here is a sample structure for
-the ~content~ folder from Hugo's official documentation (the base URL
-for this site is https://example.com/):
+Let's first take a look at how Hugo works. The most useful thing to know is
+Hugo's [[https://gohugo.io/content-management/organization/][organization of
+content source]]. In particular, the most important is the ~content~ folder,
+which contains all the Markdown files needed to generate the website. Here is a
+sample structure for the ~content~ folder from Hugo's official documentation
+(the base URL for this site is https://example.com/):
 
 #+BEGIN_EXAMPLE
-.
-└── content
-    └── about
-    |   └── index.md  // <- https://example.com/about/
-    ├── posts
-    |   ├── firstpost.md   // <- https://example.com/posts/firstpost/
-    |   ├── happy
-    |   |   └── ness.md  // <- https://example.com/posts/happy/ness/
-    |   └── secondpost.md  // <- https://example.com/posts/secondpost/
-    └── quote
-        ├── first.md       // <- https://example.com/quote/first/
-        └── second.md      // <- https://example.com/quote/second/
-#+END_EXAMPLE
+.  └── content └── about
+|   └── index.md  // <- https://example.com/about/
+├── posts
+|   ├── firstpost.md   // <- https://example.com/posts/firstpost/
+|   ├── happy
+|   |   └── ness.md  // <- https://example.com/posts/happy/ness/
+|   └── secondpost.md  // <- https://example.com/posts/secondpost/
+└── quote ├── first.md // <- https://example.com/quote/first/ └── second.md
+// <- https://example.com/quote/second/ #+END_EXAMPLE
 
-As you can see, each Markdown file in a directory under ~content~
-generates a webpage. Notice that ~_index.md~ has a special role in
-Hugo---it allows you to add front matter and content to the list
-pages. See [[https://gohugo.io/content-management/organization/#:~:text=_index.md%20has%20a%20special,in%20_index.md%20using%20the%20][here]] for more detail.
+As you can see, each Markdown file in a directory under ~content~ generates a
+webpage. Notice that ~_index.md~ has a special role in Hugo---it allows you to
+add front matter and content to the list pages. See
+[[https://gohugo.io/content-management/organization/#:~:text=_index.md%20has%20a%20special,in%20_index.md%20using%20the%20][here]] for more detail.
 
 **** Front matter in Hugo
 
-Another important concept is the /front matter/ of a Markdown file
-that contains metadata and options for the content. Some popular
-formats are TOML and YAML, which are much more human friendly than
-JSON. The following block contains the first few lines of this blog
-post. The front matter is the lines between ~+++~ (which means it is in TOML):
+Another important concept is the /front matter/ of a Markdown file that contains
+metadata and options for the content. Some popular formats are TOML and YAML,
+which are much more human friendly than JSON. The following block contains the
+first few lines of this blog post. The front matter is the lines between ~+++~
+(which means it is in TOML):
 
 #+BEGIN_SRC
 +++
@@ -186,7 +193,7 @@ highly recommend it if you just want to write blogs.
 After creating all the Markdown content and selecting a theme, you can
 preview the website by running
 #+BEGIN_SRC sh
-hugo server
+  hugo server
 #+END_SRC
 from the website directory. This builds the website and creates a
 local web server to
@@ -210,7 +217,7 @@ directory. This builds all the website pages in the ~public/~ folder
 within seconds. You can then upload that folder to an FTP server. For
 me, this amounts to
 #+BEGIN_SRC sh
-rsync -avz --delete public/ qz280@ssh.maths.cam.ac.uk:~/public_html
+  rsync -avz --delete public/ qz280@ssh.maths.cam.ac.uk:~/public_html
 #+END_SRC
 See [[https://gohugo.io/hosting-and-deployment/][here]] for other options to host and deploy your website.
 
@@ -279,7 +286,7 @@ objects. For example, I recently arXived a paper on the
 webpage, I can execute the following command
 
 #+BEGIN_SRC sh
-hugo new --kind publication publication/covid-19-bets
+  hugo new --kind publication publication/covid-19-bets
 #+END_SRC
 
 This generates a Markdown file ~publication/covid-19-bets/index.md~
@@ -321,7 +328,7 @@ other pages. By default, the homepage is a widget page with many
 built-in widgets:
 
 #+BEGIN_SRC sh
-> ls content/home
+  > ls content/home
 #+END_SRC
 #+BEGIN_EXAMPLE
 about.md           demo.md            hero.md            projects.md        tags.md
@@ -371,7 +378,7 @@ I followed the "one post per Org subtree" format [[https://ox-hugo.scripter.co/]
 ~ox-hugo~ author. So my ~content-org/~ folder has only one ~.org~
 file:
 #+BEGIN_SRC sh
-> ls content-org/
+  > ls content-org/
 #+END_SRC
 #+BEGIN_EXAMPLE
 all-posts.org
@@ -386,7 +393,7 @@ heading is then exported to the corresponding section in the ~content~
 folder:
 
 #+BEGIN_SRC sh
-> ls content/post/
+  > ls content/post/
 #+END_SRC
 #+BEGIN_EXAMPLE
 _index.md      migrating.md   mr-software.md
