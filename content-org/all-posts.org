@@ -1,8 +1,4 @@
 #+hugo_base_dir: ../
-#+LATEX_HEADER: \usepackage{amsfonts}
-#+LATEX_HEADER: \usepackage{amsmath}
-#+LATEX_HEADER: \usepackage{amssymb}
-#+LATEX_HEADER: \usepackage{amsthm}
 
 * Posts
 :PROPERTIES:
