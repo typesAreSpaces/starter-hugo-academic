@@ -1,5 +1,9 @@
 #+hugo_base_dir: ../
 
+#+latex_header: \usepackage{amsthm}
+#+latex_header: \newtheorem{theorem}{Theorem}
+#+latex_header: \newtheorem{definition}{Definition}
+
 * Posts
 :PROPERTIES:
 :EXPORT_HUGO_SECTION: posts
@@ -26,6 +30,7 @@
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/abstract.org"
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/introduction.org"
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/prekripke.org"
+#+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/kripke.org"
 
 ** My first post: how to make posts (and academic websites) with hugo + emacs
 :PROPERTIES:

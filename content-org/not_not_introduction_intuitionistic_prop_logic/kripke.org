@@ -1,0 +1,69 @@
+*** Kripke Semantics for Propositional Intuitionistic Logic
+
+\begin{definition} \cite{vanDalen2013}
+A \emph{Kripke model} is a tuple $\mathcal{K} = \langle K, \Sigma \rangle$ such that
+$K$ ia a non-empty partially ordered set, $\Sigma : K \imp 2^{PROP}$ is a function on $K$
+that assigns a collection of propositional
+variables to each element $k$ in $K$ satisfying
+the following:
+
+\begin{itemize}
+\item $\bot \not \in \Sigma(k)$ for all $k$ in $K$
+\item If $k \leq l$ then $\Sigma(k) \subseteq \Sigma(l)$
+\end{itemize}
+
+\end{definition}
+
+Each element in $K$ can be interpreted as the
+states of the knowlege-subject, which progression
+over time is captured by the partially order
+relation $\leq$ over $K$. Additionally,
+the map $\Sigma$ can be understood as the
+knowledge state of the knowlege-subject
+at each time. The function $\Sigma$ tells us
+which atoms are `true' in each state $k \in K$.
+We can extend $\Sigma$ to all formulas.
+
+\begin{lemma}
+$\Sigma$ has a unique extension to a function on $K$
+satisfying the following:
+
+\begin{itemize}
+\item[] (i) $\psi \lor \phi \in \Sigma(k)$ if and only if $\psi \in \Sigma(k)$
+or $\phi \in \Sigma(k)$
+\item[] (ii) $\psi \land \phi \in \Sigma(k)$ if and only if $\psi \in \Sigma(k)$
+and $\phi \in \Sigma(k)$
+\item[] (iii) $\psi \imp \phi \in \Sigma(k)$ if and only if for all $l \geq k$ 
+if $\psi \in \Sigma(l)$ then $\phi \in \Sigma(l)$
+\end{itemize}
+\end{lemma}
+
+The negation connective here is abbreviated as $\neg A := A \imp \bot$.
+We write $k \models \phi$ for $\phi \in \Sigma(k)$, pronouncing it as 
+$k$ forces $\phi$.
+
+\begin{lemma}(Monotonicity of $\models$) Let $k, l \in K$ and $\phi \in 
+FORM(\neg, \lor, \land, \imp)$. If $k \leq l$, then $k \models \phi$ implies
+$l \models \phi$
+\end{lemma}
+
+\begin{proof}
+Induction on $\phi$.
+\begin{itemize}
+\item $\phi$ is atomic: Holds by definition of Kripke structure.
+\item $\phi$ is $\phi_1 \lor \phi_2$: Let $k \models \phi_1 \lor \phi_2$
+and $k \leq l$. So $k \models \phi_1 \lor \phi_2$ if and only if
+$k \models \phi_1$ or $k \models \phi_2$. By induction, we have that
+$l \models \phi_1$ or $l \models \phi_2$ so 
+$l \models \phi_1 \lor \phi_2$.
+\item $\phi$ is $\phi_1 \land \phi_2$: Similar to the previous case.
+\item $\phi$ is $\phi_1 \imp \phi_2$: 
+Let $k \models \phi_1 \imp \phi_2$ and $l \geq k$.
+Suppose $p \geq l$ and $p \models \phi_1$.
+Since $p \geq k$, $p \models \phi_2$. Hence, $l \models \phi_1 \imp \phi_2$.
+\end{itemize}
+\end{proof}
+
+The last lemma captures the idea that knowlege is preserved
+`over time' of the knowlege-subject and as such it can only
+be incremented.
