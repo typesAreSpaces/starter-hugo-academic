@@ -1,16 +1,14 @@
 +++
-title = "My first post: how to make posts (and academic websites) with hugo + emacs"
+title = "My first post: how to make posts (and academic websites) with the academic theme + hugo/emacs"
 author = ["Jose Abel Castellanos Joo"]
 date = 2022-08-13
 draft = false
 +++
 
 While building this website, I thought it would be convenient to take some notes
-of the process. Most of this material is taken from [this post](http://www.statslab.cam.ac.uk/~qz280/post/migrating/). I was able to
-accomplish the resulting website thanks to it, but I believe there are a couple
-of things the author forgot to mention or simply the [academic theme](https://academic-demo.netlify.app) has updated
-which are not mentioned in the original post. I hope this note helps others
-building their website using the [Hugo Academic theme](https://academic-demo.netlify.app).
+of the process so I can recall the necessary steps if I have to start from scratch again. This website was \`rendered\` using the [hugo](https://gohugo.io/) static website generator and a special theme called [academic](https://academic-demo.netlify.app).
+
+Most of the help I got comes from [this post](http://www.statslab.cam.ac.uk/~qz280/post/migrating/); it does a pretty good job describing some technical details of the hugo framework and its organization. Thus, the intention of this post is to provide quick tips about configuring your website which aren't covered by the aforementioned post.
 
 
 ## Tools {#tools}
