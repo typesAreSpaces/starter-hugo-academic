@@ -1,5 +1,5 @@
 #+hugo_base_dir: ../
-
+#+author: Jose Abel Castellanos Joo
 #+latex_header: \usepackage{amsthm}
 #+latex_header: \newtheorem{theorem}{Theorem}
 #+latex_header: \newtheorem{definition}{Definition}
@@ -23,7 +23,7 @@
 
 ** The CDCL algorithm describes many human features (to some extend)
 :PROPERTIES:
-:EXPORT_FILE_NAME cdcl_and_life
+:EXPORT_FILE_NAME: cdcl_and_life
 :EXPORT_DATE:
 :END:
 
@@ -46,7 +46,7 @@ The first time I say the following exercise was in [[https://www.youtube.com/wat
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/prekripke.org"
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/kripke.org"
 
-** My first post: how to make posts (and academic websites) with the academic theme + hugo/emacs
+** My first post: how to make posts and academic websites using Hugo and the academic theme
 :PROPERTIES:
 :EXPORT_FILE_NAME: first_post
 :EXPORT_DATE: 2022-08-13
@@ -63,7 +63,8 @@ Most of the help I got comes from [[http://www.statslab.cam.ac.uk/~qz280/post/mi
 
 ** Migrating my website to Hugo + Academic + ox-hugo               :Workflow:
 :PROPERTIES:
-:EXPORT_FILE_NAME: migrating :EXPORT_DATE: 2022-07-15
+:EXPORT_FILE_NAME: migrating
+:EXPORT_DATE: 2022-07-15
 :END:
 
 Being stuck at home during the pandemic, as miserable as it is, actually helps

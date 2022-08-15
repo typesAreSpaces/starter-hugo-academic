@@ -1,5 +1,5 @@
 +++
-title = "My first post: how to make posts (and academic websites) with the academic theme + hugo/emacs"
+title = "My first post: how to make posts and academic websites using Hugo and the academic theme"
 author = ["Jose Abel Castellanos Joo"]
 date = 2022-08-13
 draft = false
@@ -18,21 +18,19 @@ Most of the help I got comes from [this post](http://www.statslab.cam.ac.uk/~qz2
 
 This static generator is used for building the main components of the website. Among the main features are:
 
--   Editing content through markdown: It uses the go programming language to 'compile' html files from markdown files.
+-   Editing using markdown: It uses the go programming language to 'compile' html files from markdown files.
 -   'Capable Templating': I understand this as convenient code which enables users to programatically structure websites using special variables within markdown.
--   Extensive selection of themes. As I already mentioned before, we will particularly focus on the academic theme.
+-   Extensive selection of themes: As I already mentioned before, we will particularly focus on the academic theme.
 
 
 ### Academic theme {#academic-theme}
 
-This theme in particular focuses academic settings like portfolio, cv, resume, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented. In particular, I found a tool
-
--   [Hugo Academic CLI](https://pypi.org/project/academic/):
+This theme in particular focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [Hugo Academic CLI](https://pypi.org/project/academic/) which can generate publications entries from a bibtex files.
 
 
-### Ox-hugo (for workflow for posting new notes) {#ox-hugo--for-workflow-for-posting-new-notes}
+### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
 
-TODO: Describe installation.
+If you're an emacs user and heavily use org-mode the ox-hugo package comes handy to organize your post and use org files instead of markdown files.
 
 
 ## Basic customization {#basic-customization}

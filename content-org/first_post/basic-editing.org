@@ -1,11 +1,14 @@
 *** Basic customization
 
-It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
+It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working/ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
 
-**** Navigation links:
-***** Check ./config/_default/menus.yaml
+**** config/_default/menus.yaml:
+***** Navigation menu
 ***** Add the option `canonifyURLS: true` otherwise the page header doesn't link to the right home page.
 
-**** Footer (./config/_default/params.yaml):
+**** config/_default/params.yaml:
+***** footer
 ***** appearance section (where to store themes)
 ***** footer section (replace Me by Author's name)
+
+**** TODO: add more files to quickly customize, like icons, personal information, baseURL, pictures etc
