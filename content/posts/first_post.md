@@ -16,7 +16,7 @@ Most of the help I got comes from [this post](http://www.statslab.cam.ac.uk/~qz2
 
 ### Hugo {#hugo}
 
-This static generator is used for building the main components of the website. Among the main features are:
+This static generator is used for building the main components of the website. Its main features are:
 
 -   Editing using markdown: It uses the go programming language to 'compile' html files from markdown files.
 -   'Capable Templating': I understand this as convenient code which enables users to programatically structure websites using special variables within markdown.
@@ -25,29 +25,32 @@ This static generator is used for building the main components of the website. A
 
 ### Academic theme {#academic-theme}
 
-This theme in particular focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [Hugo Academic CLI](https://pypi.org/project/academic/) which can generate publications entries from a bibtex files.
+The theme focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [Hugo Academic CLI](https://pypi.org/project/academic/) which can generate publication entries from a bibtex file.
 
 
 ### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
 
-If you're an emacs user and heavily use org-mode the ox-hugo package comes handy to organize your post and use org files instead of markdown files.
+If you're an emacs user which likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
 
 
 ## Basic customization {#basic-customization}
 
-It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
+It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working/ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
 
 
-### Navigation links: {#navigation-links}
+### config/_default/menus.yaml: {#config-default-menus-dot-yaml}
 
 
-#### Check ./config/_default/menus.yaml {#check-dot-config-default-menus-dot-yaml}
+#### Navigation menu {#navigation-menu}
 
 
 #### Add the option \`canonifyURLS: true\` otherwise the page header doesn't link to the right home page. {#add-the-option-canonifyurls-true-otherwise-the-page-header-doesn-t-link-to-the-right-home-page-dot}
 
 
-### Footer (./config/_default/params.yaml): {#footer--dot-config-default-params-dot-yaml}
+### config/_default/params.yaml: {#config-default-params-dot-yaml}
+
+
+#### footer {#footer}
 
 
 #### appearance section (where to store themes) {#appearance-section--where-to-store-themes}
@@ -56,13 +59,19 @@ It can definitely take some time to go through the documentation to figure out w
 #### footer section (replace Me by Author's name) {#footer-section--replace-me-by-author-s-name}
 
 
+### TODO: add more files to quickly customize, like icons, personal information, baseURL, pictures etc {#todo-add-more-files-to-quickly-customize-like-icons-personal-information-baseurl-pictures-etc}
+
+
 ## My workflow {#my-workflow}
 
 
-### Creating a publication {#creating-a-publication}
+### Add a publication {#add-a-publication}
 
 TODO: Describe this [Documentation](https://wowchemy.com/docs/content/publications/) briefly. Mostly about the fact on how to add
 the pdf matching the folder's name.
 
 
-### Adding a post {#adding-a-post}
+### Create a post {#create-a-post}
+
+
+### My makefile {#my-makefile}
