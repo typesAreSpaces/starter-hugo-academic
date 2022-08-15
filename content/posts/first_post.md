@@ -8,15 +8,26 @@ draft = false
 While building this website, I thought it would be convenient to take some notes
 of the process so I can recall the necessary steps if I have to start from scratch again. This website was \`rendered\` using the [hugo](https://gohugo.io/) static website generator and a special theme called [academic](https://academic-demo.netlify.app).
 
-Most of the help I got comes from [this post](http://www.statslab.cam.ac.uk/~qz280/post/migrating/); it does a pretty good job describing some technical details of the hugo framework and its organization. Thus, the intention of this post is to provide quick tips about configuring your website which aren't covered by the aforementioned post.
+Most of the help I got comes from [this post](http://www.statslab.cam.ac.uk/~qz280/post/migrating/); it does a pretty good job describing some technical details of the hugo framework and its organization. Thus, the intention of this post is to provide and overview and quick configuration tips which aren't covered by the aforementioned post.
 
 
 ## Tools {#tools}
 
 
-### Hugo (for building the main components of the website) {#hugo--for-building-the-main-components-of-the-website}
+### Hugo {#hugo}
 
-TODO: Describe installation.
+This static generator is used for building the main components of the website. Among the main features are:
+
+-   Editing content through markdown: It uses the go programming language to 'compile' html files from markdown files.
+-   'Capable Templating': I understand this as convenient code which enables users to programatically structure websites using special variables within markdown.
+-   Extensive selection of themes. As I already mentioned before, we will particularly focus on the academic theme.
+
+
+### Academic theme {#academic-theme}
+
+This theme in particular focuses academic settings like portfolio, cv, resume, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented. In particular, I found a tool
+
+-   [Hugo Academic CLI](https://pypi.org/project/academic/):
 
 
 ### Ox-hugo (for workflow for posting new notes) {#ox-hugo--for-workflow-for-posting-new-notes}
@@ -24,9 +35,9 @@ TODO: Describe installation.
 TODO: Describe installation.
 
 
-## The building/basic-editing process {#the-building-basic-editing-process}
+## Basic customization {#basic-customization}
 
-TODO
+It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
 
 
 ### Navigation links: {#navigation-links}

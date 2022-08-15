@@ -1,6 +1,6 @@
-*** The building/basic-editing process
+*** Basic customization
 
-TODO
+It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
 
 **** Navigation links:
 ***** Check ./config/_default/menus.yaml

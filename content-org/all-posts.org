@@ -55,10 +55,10 @@ The first time I say the following exercise was in [[https://www.youtube.com/wat
 While building this website, I thought it would be convenient to take some notes
 of the process so I can recall the necessary steps if I have to start from scratch again. This website was `rendered` using the [[https://gohugo.io/][hugo]] static website generator and a special theme called [[https://academic-demo.netlify.app][academic]].
 
-Most of the help I got comes from [[http://www.statslab.cam.ac.uk/~qz280/post/migrating/][this post]]; it does a pretty good job describing some technical details of the hugo framework and its organization. Thus, the intention of this post is to provide quick configuration tips which aren't covered by the aforementioned post.
+Most of the help I got comes from [[http://www.statslab.cam.ac.uk/~qz280/post/migrating/][this post]]; it does a pretty good job describing some technical details of the hugo framework and its organization. Thus, the intention of this post is to provide and overview and quick configuration tips which aren't covered by the aforementioned post.
 
 #+INCLUDE: "./first_post/tools.org"
-#+INCLUDE: "./first_post/building.org"
+#+INCLUDE: "./first_post/basic-editing.org"
 #+INCLUDE: "./first_post/workflow.org"
 
 ** Migrating my website to Hugo + Academic + ox-hugo               :Workflow:
