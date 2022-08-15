@@ -1,0 +1,7 @@
+*** My workflow
+
+**** Creating a publication
+TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add
+the pdf matching the folder's name.
+
+**** Adding a post

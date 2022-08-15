@@ -9,6 +9,12 @@
 :EXPORT_HUGO_SECTION: posts
 :END:
 
+** Formalization of $\neg \neg (A \lor \neg A)$ in Lean
+:PROPERTIES:
+:EXPORT_FILE_NAME: my_favorite_lemma
+:EXPORT_DATE:
+:END:
+
 ** Why Zorn's lemma is my favorite lemma
 :PROPERTIES:
 :EXPORT_FILE_NAME: my_favorite_lemma
@@ -45,36 +51,9 @@ of things the author forgot to mention or simply the [[https://academic-demo.net
 which are not mentioned in the original post. I hope this note helps others
 building their website using the [[https://academic-demo.netlify.app][Hugo Academic theme]].
 
-*** Tools
-
-**** Hugo (for building the main components of the website)
-
-TODO: Describe installation.
-
-**** Ox-hugo (for workflow for posting new notes)
-
-TODO: Describe installation.
-
-*** The building/basic-editing process
-
-TODO
-
-**** Navigation links:
-***** Check ./config/_default/menus.yaml
-***** Add the option `canonifyURLS: true` otherwise the page header doesn't link to the right home page.
-
-**** Footer (./config/_default/params.yaml):
-***** appearance section (where to store themes)
-***** footer section (replace Me by Author's name)
-
-*** My workflow
-
-**** Creating a publication
-TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add
-the pdf matching the folder's name.
-
-**** Adding a post
-
+#+INCLUDE: "./first_post/tools.org"
+#+INCLUDE: "./first_post/building.org"
+#+INCLUDE: "./first_post/workflow.org"
 
 ** Migrating my website to Hugo + Academic + ox-hugo               :Workflow:
 :PROPERTIES:
