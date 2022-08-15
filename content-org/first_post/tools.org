@@ -1,9 +1,14 @@
 *** Tools
 
-**** Hugo (for building the main components of the website)
+**** Hugo
 
+for building the main components of the website
 TODO: Describe installation.
 
 **** Ox-hugo (for workflow for posting new notes)
+
+TODO: Describe installation.
+
+**** Hugo Academic CLI
 
 TODO: Describe installation.
