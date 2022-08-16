@@ -1,7 +1,7 @@
 +++
 title = "A not not Brief Introduction to Kripke Semantics for Propositional Intuitionistic Logic"
 author = ["Jose Abel Castellanos Joo"]
-date = 2022-08-13
+date = 2022-08-16
 draft = false
 +++
 

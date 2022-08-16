@@ -1,4 +1,4 @@
-*** My workflow
+*** TODO My workflow
 
 **** Add a publication
 TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add
@@ -6,4 +6,4 @@ the pdf matching the folder's name.
 
 **** Create a post
 
-**** My makefile
+**** Suggested Makefile to automate several tasks

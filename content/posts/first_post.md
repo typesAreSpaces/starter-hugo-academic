@@ -1,5 +1,5 @@
 +++
-title = "My first post: how to make posts and academic websites using Hugo and the academic theme"
+title = "My first post: how to make posts and academic websites using Hugo with the academic theme"
 author = ["Jose Abel Castellanos Joo"]
 date = 2022-08-13
 draft = false
@@ -23,46 +23,81 @@ This static generator is used for building the main components of the website. I
 -   Extensive selection of themes: As I already mentioned before, we will particularly focus on the academic theme.
 
 
+#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+
+
+#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+
+
 ### Academic theme {#academic-theme}
 
 The theme focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [Hugo Academic CLI](https://pypi.org/project/academic/) which can generate publication entries from a bibtex file.
 
 
+#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+
+
+#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+
+
 ### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
 
-If you're an emacs user which likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
+If you're an emacs user who likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
 
 
-## Basic customization {#basic-customization}
+#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+
+
+#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+
+
+## <span class="org-todo todo TODO">TODO</span> Basic customization {#basic-customization}
 
 It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working/ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
 
 
-### config/_default/menus.yaml: {#config-default-menus-dot-yaml}
+### menus.yaml: {#menus-dot-yaml}
 
 
-#### Navigation menu {#navigation-menu}
+#### Reason {#reason}
+
+TODO Explain why.
 
 
-#### Add the option \`canonifyURLS: true\` otherwise the page header doesn't link to the right home page. {#add-the-option-canonifyurls-true-otherwise-the-page-header-doesn-t-link-to-the-right-home-page-dot}
+#### Location {#location}
+
+config/_default/menus.yaml
 
 
-### config/_default/params.yaml: {#config-default-params-dot-yaml}
+#### Settings {#settings}
+
+-   Navigation menu
+-   Add the option \`canonifyURLS: true\` otherwise the page header doesn't link to the right home page.
 
 
-#### footer {#footer}
+### params.yaml: {#params-dot-yaml}
 
 
-#### appearance section (where to store themes) {#appearance-section--where-to-store-themes}
+#### Reason {#reason}
+
+TODO Explain why.
 
 
-#### footer section (replace Me by Author's name) {#footer-section--replace-me-by-author-s-name}
+#### Location {#location}
+
+config/_default/params.yaml
 
 
-### TODO: add more files to quickly customize, like icons, personal information, baseURL, pictures etc {#todo-add-more-files-to-quickly-customize-like-icons-personal-information-baseurl-pictures-etc}
+#### Settings {#settings}
+
+-   footer section (replace Me by Author's name)
+-   appeareance section (where to store themes)
 
 
-## My workflow {#my-workflow}
+### <span class="org-todo todo TODO">TODO</span> add more files to quickly customize, like icons, personal information, baseURL, pictures etc {#add-more-files-to-quickly-customize-like-icons-personal-information-baseurl-pictures-etc}
+
+
+## <span class="org-todo todo TODO">TODO</span> My workflow {#my-workflow}
 
 
 ### Add a publication {#add-a-publication}
@@ -74,4 +109,4 @@ the pdf matching the folder's name.
 ### Create a post {#create-a-post}
 
 
-### My makefile {#my-makefile}
+### Suggested Makefile to automate several tasks {#suggested-makefile-to-automate-several-tasks}

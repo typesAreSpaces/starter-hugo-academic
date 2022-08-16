@@ -20,7 +20,7 @@ The theme focuses on academic settings like portfolios, cvs, resumes, conference
 
 **** [[https://ox-hugo.scripter.co][Ox-hugo]] (optional)
 
-If you're an emacs user which likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
+If you're an emacs user who likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
 
 ***** TODO Add information about installation
 ***** TODO Add information basic execution

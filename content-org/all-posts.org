@@ -38,7 +38,7 @@ The first time I say the following exercise was in [[https://www.youtube.com/wat
 ** A not not Brief Introduction to Kripke Semantics for Propositional Intuitionistic Logic
 :PROPERTIES:
 :EXPORT_FILE_NAME: not_not_kripe_intro
-:EXPORT_DATE: 2022-08-13
+:EXPORT_DATE: 2022-08-16
 :END:
 
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/abstract.org"
@@ -46,7 +46,7 @@ The first time I say the following exercise was in [[https://www.youtube.com/wat
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/prekripke.org"
 #+INCLUDE: "./not_not_introduction_intuitionistic_prop_logic/kripke.org"
 
-** My first post: how to make posts and academic websites using Hugo and the academic theme
+** My first post: how to make posts and academic websites using Hugo with the academic theme
 :PROPERTIES:
 :EXPORT_FILE_NAME: first_post
 :EXPORT_DATE: 2022-08-13
