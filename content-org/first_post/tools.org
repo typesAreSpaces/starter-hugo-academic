@@ -8,19 +8,85 @@ This static generator is used for building the main components of the website. I
 - 'Capable Templating': I understand this as convenient code which enables users to programatically structure websites using special variables within markdown.
 - Extensive selection of themes: As I already mentioned before, we will particularly focus on the academic theme.
 
-***** TODO Add information about installation
-***** TODO Add information basic execution
+Here are some installation options for some operating systems:
+
+- macOs
+
+  #+begin_src bash
+    brew install hugo
+  #+end_src
+
+- Windows
+
+  #+begin_src bash 
+    choco install hugo --confirm
+  #+end_src
+
+- Debian/Ubuntu
+
+  #+begin_src bash 
+    sudo apt-get install hugo
+  #+end_src
+
+- Arch Linux
+
+  #+begin_src bash 
+    sudo pacman -Syu hugo
+  #+end_src
+
+- Fedora, Red Hat and CentOS
+
+  #+begin_src bash 
+    sudo dnf install hugo
+  #+end_src
+
+- openSUSE
+
+  #+begin_src bash 
+    sudo zypper install hugo
+  #+end_src
+
+- Solus
+
+  #+begin_src bash 
+    sudo eopkg install hugo
+  #+end_src
+
+- OpenBSD
+
+  #+begin_src bash 
+    doas pkg_add hugo
+  #+end_src
 
 **** Academic theme
 
 The theme focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [[https://wowchemy.com/docs/][project]] is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [[https://pypi.org/project/academic/][Hugo Academic CLI]] which can generate publication entries from a bibtex file. 
 
 ***** TODO Add information about installation
+
+https://wowchemy.com/hugo-themes/
+
 ***** TODO Add information basic execution
 
 **** [[https://ox-hugo.scripter.co][Ox-hugo]] (optional)
 
 If you're an emacs user who likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
+
+Add the following to your init.el configuration file to obtain hugo:
+
+#+begin_src emacs-lisp
+  (with-eval-after-load 'ox
+    (require 'ox-hugo))
+#+end_src
+
+If you use [[https://github.com/jwiegley/use-package][use-package]], use this instead:
+
+#+begin_src emacs-lisp 
+  (use-package ox-hugo
+    :ensure t   ;Auto-install the package from Melpa
+    :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
+    :after ox)
+  #+end_src
 
 ***** TODO Add information about installation
 ***** TODO Add information basic execution

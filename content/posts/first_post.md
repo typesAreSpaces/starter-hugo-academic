@@ -22,11 +22,47 @@ This static generator is used for building the main components of the website. I
 -   'Capable Templating': I understand this as convenient code which enables users to programatically structure websites using special variables within markdown.
 -   Extensive selection of themes: As I already mentioned before, we will particularly focus on the academic theme.
 
+Here are some installation options for some operating systems:
 
-#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+-   macOs
+    ```bash
+    brew install hugo
+    ```
 
+-   Windows
+    ```bash
+    choco install hugo --confirm
+    ```
 
-#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+-   Debian/Ubuntu
+    ```bash
+    sudo apt-get install hugo
+    ```
+
+-   Arch Linux
+    ```bash
+    sudo pacman -Syu hugo
+    ```
+
+-   Fedora, Red Hat and CentOS
+    ```bash
+    sudo dnf install hugo
+    ```
+
+-   openSUSE
+    ```bash
+    sudo zypper install hugo
+    ```
+
+-   Solus
+    ```bash
+    sudo eopkg install hugo
+    ```
+
+-   OpenBSD
+    ```bash
+    doas pkg_add hugo
+    ```
 
 
 ### Academic theme {#academic-theme}
@@ -36,6 +72,8 @@ The theme focuses on academic settings like portfolios, cvs, resumes, conference
 
 #### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
 
+<https://wowchemy.com/hugo-themes/>
+
 
 #### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
 
@@ -43,6 +81,22 @@ The theme focuses on academic settings like portfolios, cvs, resumes, conference
 ### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
 
 If you're an emacs user who likes org-mode, the ox-hugo package comes handy to organize your posts and use org instead of markdown.
+
+Add the following to your init.el configuration file to obtain hugo:
+
+```emacs-lisp
+(with-eval-after-load 'ox
+  (require 'ox-hugo))
+```
+
+If you use [use-package](https://github.com/jwiegley/use-package), use this instead:
+
+```emacs-lisp
+(use-package ox-hugo
+  :ensure t   ;Auto-install the package from Melpa
+  :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
+  :after ox)
+```
 
 
 #### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
