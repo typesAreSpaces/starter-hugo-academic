@@ -19,30 +19,5 @@ fun hp : p => arg (imp hp)
 fun arg : q → false =>
 nnimp (composition nnp (subproof arg))
 
-theorem not_not_modus_ponens2
-(nnp : (p → false) → false) (nnimp : ((p → q) → false) → false) : (q → false) → false 
-:=
-fun arg : q → false =>
-nnimp (composition 
-nnp 
-(
-  (fun arg : q → false => fun imp : p → q => fun hp : p => arg (imp hp)) arg
-  )
-  )
+def modus_ponens (x : X) (f : X → Y) : Y := f x
 
-theorem not_not_modus_ponens3
-(nnp : (p → false) → false) (nnimp : ((p → q) → false) → false) : (q → false) → false 
-:=
-fun arg : q → false =>
-nnimp 
-(
-  (
-    fun f : (p → false) → false => 
-    fun g : (p → q) → (p → false) => 
-    fun x : (p → q) => f (g x)
-  )
-  nnp 
-  (
-    (fun arg : q → false => fun imp : p → q => fun hp : p => arg (imp hp)) arg
-  )
-)
