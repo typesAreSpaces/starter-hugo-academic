@@ -62,11 +62,17 @@ Here are some installation options for some operating systems:
 
 The theme focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [[https://wowchemy.com/docs/][project]] is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [[https://pypi.org/project/academic/][Hugo Academic CLI]] which can generate publication entries from a bibtex file. 
 
-***** TODO Add information about installation
+In order to install the theme:
+1. Select the `Academic Resume` from https://wowchemy.com/hugo-themes/
+2. Click on `Start with Academic Resume`
+3. Choose either Github or Gitlab to fork the content of the theme into a git repository
+4. Finish the process by clicking on the 'Save & Deploy' button.
 
-https://wowchemy.com/hugo-themes/
+The latter will fork the content of the theme from Netlify. The latter will create a website hosted by Netlify. If you already have a domain, e.g. a personal website or some url from your university, I'd recommed just to keep track of the content from either Github or Gitlab.
 
-***** TODO Add information basic execution
+#+CAPTION: If you chose the default name, the following repo should appear in your account
+#+NAME:    fig:academic_theme_content
+[[/home/jose/Documents/GithubProjects/starter-hugo-academic/content-org/first_post/academic_theme_content.png]]
 
 **** [[https://ox-hugo.scripter.co][Ox-hugo]] (optional)
 
@@ -87,6 +93,3 @@ If you use [[https://github.com/jwiegley/use-package][use-package]], use this in
     :pin melpa  ;`package-archives' should already have ("melpa" . "https://melpa.org/packages/")
     :after ox)
   #+end_src
-
-***** TODO Add information about installation
-***** TODO Add information basic execution

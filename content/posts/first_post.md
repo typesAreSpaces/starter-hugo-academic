@@ -69,13 +69,18 @@ Here are some installation options for some operating systems:
 
 The theme focuses on academic settings like portfolios, cvs, resumes, conference websites, etc. The [project](https://wowchemy.com/docs/) is well documented and provides good support for academic needs. For example, the author of the theme provides a tool called [Hugo Academic CLI](https://pypi.org/project/academic/) which can generate publication entries from a bibtex file.
 
+In order to install the theme:
 
-#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+1.  Select the \`Academic Resum\\'e\` from <https://wowchemy.com/hugo-themes/>
+2.  Clic on \`Start with Academic Resum\\'e\`
+3.  Choose either Github or Gitlab to fork the content of the theme into a git repository
+4.  Finish the process by clicking on the 'Save &amp; Deploy' button.
 
-<https://wowchemy.com/hugo-themes/>
+The latter will fork the content of the theme from Netlify. The latter will create a website hosted by Netlify. If you already have a domain, e.g. a personal website or some url from your university, I'd recommed just to keep track of the content from either Github or Gitlab.
 
+<a id="figure--fig:academic-theme-content"></a>
 
-#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+{{< figure src="/ox-hugo/academic_theme_content.png" caption="<span class=\"figure-number\">Figure 1: </span>If you chose the default name, the following repo should appear in your account as well" >}}
 
 
 ### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
