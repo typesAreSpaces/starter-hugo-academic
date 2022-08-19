@@ -1,9 +1,20 @@
-*** TODO My workflow
+*** Workflow
 
 **** Add a publication
-TODO: Describe this [[https://wowchemy.com/docs/content/publications/][Documentation]] briefly. Mostly about the fact on how to add
-the pdf matching the folder's name.
+As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [[https://wowchemy.com/docs/content/publications/][documentation.]] 
+
+***** Manual
+
+TODO
+
+***** Using the python package academic
+
+TODO
 
 **** Create a post
 
+TODO
+
 **** Suggested Makefile to automate several tasks
+
+TODO
