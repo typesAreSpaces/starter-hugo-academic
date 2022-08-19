@@ -177,16 +177,29 @@ canonifyURLS: true
 Otherwise, I noticed the button with the name of the website has a link to the parent directory in your host domain.
 
 
-## <span class="org-todo todo TODO">TODO</span> My workflow {#my-workflow}
+## Workflow {#workflow}
 
 
 ### Add a publication {#add-a-publication}
 
-TODO: Describe this [Documentation](https://wowchemy.com/docs/content/publications/) briefly. Mostly about the fact on how to add
-the pdf matching the folder's name.
+As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [documentation.](https://wowchemy.com/docs/content/publications/)
+
+
+#### Manual {#manual}
+
+For each publications, it requires a directory inside `$WEBSITE_PATH/content/publications/`
+
+
+#### Using the python package academic {#using-the-python-package-academic}
+
+TODO
 
 
 ### Create a post {#create-a-post}
 
+TODO
+
 
 ### Suggested Makefile to automate several tasks {#suggested-makefile-to-automate-several-tasks}
+
+TODO

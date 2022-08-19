@@ -1,15 +1,32 @@
 *** Workflow
 
 **** Add a publication
-As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [[https://wowchemy.com/docs/content/publications/][documentation.]] 
+As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [[https://wowchemy.com/docs/content/publications/][documentation.]] The default directory for making changes about is ~$WEBSITE_PATH/content/publication~. In my case, I decided to change a bit the format and rearrange the structure a little bit. In any case, the following should be useful whether you continue using the default settings or decide to make changes.
 
 ***** Manual
 
-TODO
+For each publication, it requires a named directory, call it ~A~, inside ~$WEBSITE_PATH/content/publication/~
+
+The content for ~$WEBSITE_PATH/content/publication/A/~ should contain the following:
+
+- cite.bib: Basically it contains the information you would like to provide for your paper to be included into a bibtex library, i.e. like an entry for a bibtex file in a \(\LaTeX\) document.
+- index.md: TODO
 
 ***** Using the python package academic
 
 TODO
+
+You can install it with the following command:
+
+#+begin_src bash 
+pip3 install -U academic
+#+end_src
+
+To do a massive migration:
+
+#+begin_src bash 
+academic import --bibtex data/publications.bib
+#+end_src
 
 **** Create a post
 
