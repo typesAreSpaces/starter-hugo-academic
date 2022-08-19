@@ -71,8 +71,8 @@ The theme focuses on academic settings like portfolios, cvs, resumes, conference
 
 In order to install the theme:
 
-1.  Select the \`Academic Resum\\'e\` from <https://wowchemy.com/hugo-themes/>
-2.  Clic on \`Start with Academic Resum\\'e\`
+1.  Select the \`Academic Resume\` from <https://wowchemy.com/hugo-themes/>
+2.  Click on \`Start with Academic Resume\`
 3.  Choose either Github or Gitlab to fork the content of the theme into a git repository
 4.  Finish the process by clicking on the 'Save &amp; Deploy' button.
 
@@ -80,7 +80,7 @@ The latter will fork the content of the theme from Netlify. The latter will crea
 
 <a id="figure--fig:academic-theme-content"></a>
 
-{{< figure src="/ox-hugo/academic_theme_content.png" caption="<span class=\"figure-number\">Figure 1: </span>If you chose the default name, the following repo should appear in your account as well" >}}
+{{< figure src="/ox-hugo/academic_theme_content.png" caption="<span class=\"figure-number\">Figure 1: </span>If you chose the default name, the following repo should appear in your account" >}}
 
 
 ### [Ox-hugo](https://ox-hugo.scripter.co) (optional) {#ox-hugo--optional}
@@ -104,56 +104,77 @@ If you use [use-package](https://github.com/jwiegley/use-package), use this inst
 ```
 
 
-#### <span class="org-todo todo TODO">TODO</span> Add information about installation {#add-information-about-installation}
+## Basic customization {#basic-customization}
 
+After cloning your repo into a local machine, your website is ready to be published. You can use the command
 
-#### <span class="org-todo todo TODO">TODO</span> Add information basic execution {#add-information-basic-execution}
+```bash
+hugo server -D
+```
 
+to see a preview of how it would look like.
 
-## <span class="org-todo todo TODO">TODO</span> Basic customization {#basic-customization}
-
-It can definitely take some time to go through the documentation to figure out where to make the necessary changes to have a working/ready-to-publish personal website. The following is a list of the places a user might be interested in checking for the latter:
+On the other hand, it can take some time to go through Hugo's documentation to figure out where to make necessary changes to have a personalized website. The following is a list of the places I recommend checking for the latter:
 
 
 ### menus.yaml: {#menus-dot-yaml}
 
+This file contains configuration information of the menu bar. The \`main\` entry contains the sections to be included in it with three parameters:
 
-#### Reason {#reason}
-
-TODO Explain why.
+-   name: This is the name the menu will display in the menu bar.
+-   url: You can specify any website address. Conveniently, this theme allows to user to use '#&lt;widget&gt;' where &lt;widget&gt; can be any section in your content directory.
+-   weight: This number specifies the order of apparence for each menu. Assuming each entry has unique weight, entry A appears to the left of entry B if and only if the weght of entry A is smaller than the weight of entry B, i.e. entries with smaller weight appear first to the left.
 
 
 #### Location {#location}
 
-config/_default/menus.yaml
-
-
-#### Settings {#settings}
-
--   Navigation menu
--   Add the option \`canonifyURLS: true\` otherwise the page header doesn't link to the right home page.
+```bash
+$WEBSITE_PATH/config/_default/menus.yaml
+```
 
 
 ### params.yaml: {#params-dot-yaml}
 
-
-#### Reason {#reason}
-
-TODO Explain why.
+This file contains parameters like the color scheme to be used, google analytics, \\(\LaTeX\\) support, etc.
 
 
 #### Location {#location}
 
-config/_default/params.yaml
+```bash
+$WEBSITE_PATH/config/_default/params.yaml
+```
 
 
-#### Settings {#settings}
+#### Additional settings {#additional-settings}
 
--   footer section (replace Me by Author's name)
--   appeareance section (where to store themes)
+I recommend to explore this section to enable/disable any options you might be interested. Nonetheless, I think you should change the footer parameter, especifically the copyright entry which initially contains '... {year} Me ...'. Of course the latter should be changed to your name.
 
 
-### <span class="org-todo todo TODO">TODO</span> add more files to quickly customize, like icons, personal information, baseURL, pictures etc {#add-more-files-to-quickly-customize-like-icons-personal-information-baseurl-pictures-etc}
+### config.yaml: {#config-dot-yaml}
+
+This file contains important entries like 'title' and 'baseURL'. The information in the 'title' entry will be used as a 'home buttom'. Additionally, make sure to setup your 'baseURL' with a trailing slash before making a deploy with the command
+
+```bash
+hugo
+```
+
+
+#### Location {#location}
+
+```bash
+$WEBSITE_PATH/config/_default/config.yaml
+```
+
+
+#### Additional settings {#additional-settings}
+
+I'd recommend to set to true the property
+
+```bash
+canonifyURLS: true
+```
+
+Otherwise, I noticed the button with the name of the website has a link to the parent directory in your host domain.
 
 
 ## <span class="org-todo todo TODO">TODO</span> My workflow {#my-workflow}
