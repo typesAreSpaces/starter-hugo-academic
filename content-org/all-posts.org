@@ -1,8 +1,11 @@
 #+hugo_base_dir: ../
 #+author: Jose Abel Castellanos Joo
+#+options: tex:t
 #+latex_header: \usepackage{amsthm}
+#+latex_header: \usepackage{amssymb}
 #+latex_header: \newtheorem{theorem}{Theorem}
 #+latex_header: \newtheorem{definition}{Definition}
+#+latex_header: \usepackage{ebproof}
 
 * Posts
 :PROPERTIES:
@@ -29,11 +32,11 @@
 
 ** Formalization of $\neg \neg (A \lor \neg A)$ in Lean
 :PROPERTIES:
-:EXPORT_FILE_NAME: my_favorite_lemma
-:EXPORT_DATE:
+:EXPORT_FILE_NAME: not_not_lem
+:EXPORT_DATE: 2022-08-20
 :END:
 
-The first time I say the following exercise was in [[https://www.youtube.com/watch?v=OMzxl1c6pSo][OPLSS 2015]].
+The first time I saw the following exercise was in [[https://www.youtube.com/watch?v=OMzxl1c6pSo][OPLSS 2015]]. A proof using the axiomatization of intuitionistic logic is the following:
 
 ** A not not Brief Introduction to Kripke Semantics for Propositional Intuitionistic Logic
 :PROPERTIES:
