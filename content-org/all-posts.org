@@ -33,7 +33,7 @@
 :EXPORT_DATE:
 :END:
 
-The first time I say the following exercise was in [[https://www.youtube.com/watch?v=OMzxl1c6pSo][OPLSS 2015]]
+The first time I say the following exercise was in [[https://www.youtube.com/watch?v=OMzxl1c6pSo][OPLSS 2015]].
 
 ** A not not Brief Introduction to Kripke Semantics for Propositional Intuitionistic Logic
 :PROPERTIES:
