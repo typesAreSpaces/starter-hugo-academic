@@ -180,26 +180,118 @@ Otherwise, I noticed the button with the name of the website has a link to the p
 ## Workflow {#workflow}
 
 
-### Add a publication {#add-a-publication}
+### Adding publications {#adding-publications}
 
-As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [documentation.](https://wowchemy.com/docs/content/publications/)
+As mentioned before, I noticed two mechanisms to add publications into your academic themed website according to the official [documentation.](https://wowchemy.com/docs/content/publications/) The default directory for making changes about is `$WEBSITE_PATH/content/publication`. In my case, I decided to change a bit the format and rearrange the structure a little bit. In any case, the following should be useful whether you continue using the default settings or decide to make changes.
 
 
-#### Manual {#manual}
+#### Manually {#manually}
 
-For each publications, it requires a directory inside `$WEBSITE_PATH/content/publications/`
+For each publication, it requires a named directory, say `A`, inside `$WEBSITE_PATH/content/publication/`
+
+The content for `$WEBSITE_PATH/content/publication/A/` should contain the following:
+
+-   cite.bib: Basically it contains the information for your publications to be added into a bibtex library.
+-   index.md: The most relevant entries for this file includes title and authors.
+
+If you would like to include a pdf of your publication then it's necessary to include it inside the directory with the same name of such directory. In our example this would be `$WEBSITE_PATH/content/publication/A/A.pdf`
 
 
 #### Using the python package academic {#using-the-python-package-academic}
 
-TODO
+You can install it with the following command:
+
+```bash
+pip3 install -U academic
+```
+
+If you have a bibtex file with bib entries of your publications, say `./data/publications.bib`, you only need to execute the following command to automatically create publication entries in your website:
+
+```bash
+academic import --bibtex data/publications.bib
+```
 
 
-### Create a post {#create-a-post}
+### Creating a post {#creating-a-post}
 
-TODO
+
+#### Manually {#manually}
+
+The following are steps to add posts using mardown files:
+
+-   Create a markdown file inside the directory `.content/posts/`
+-   The header of such file should be of the form:
+    ```markdown
+    +++
+    title = "My first post: how to make posts and academic websites using Hugo with the academic theme"
+    author = ["Jose Abel Castellanos Joo"]
+    date = 2022-08-13
+    draft = false
+    +++
+    <content-goes-here>
+    ```
+
+
+#### Using Ox-hugo {#using-ox-hugo}
+
+I personally use this approach since I have already setup many [yasnippets](https://github.com/joaotavora/yasnippet) for org-mode and the ox-hugo was easy to install. This workflow uses a single org file (recommended by the author of the package) which contains first level headers associated to some section of your website, and each second level header will be translated as a markdown file in your project.
+
+It's recommend to have this single file in a separate directory from the hugo original structure, say `./content-org`. The header of this single file should be
+
+```org
+#+hugo_base_dir: ../
+#+author: <your-name>
+```
+
+The relevant properties for ox hugo is the `:EXPORT_HUGO_SECTION:` which should match the directory where the transpiled markdown file will be store. In my case for my Posts section the latter is the following:
+
+```org
+* Posts
+:PROPERTIES:
+:EXPORT_HUGO_SECTION: posts
+:END:
+```
 
 
 ### Suggested Makefile to automate several tasks {#suggested-makefile-to-automate-several-tasks}
 
-TODO
+The following is my Makefile I use to automate some building constructions. Additionally, it contains other scripts to change settings like the baseURL and icons.
+
+```makefile
+USERNAME='jose.castellanosjoo'
+DOMAIN='cs.unm.edu'
+BASE_URL='https:\/\/www.$(DOMAIN)\/~$(USERNAME)\/'
+CURRENT_ICON_PATH=~/Pictures/icon.png
+UNAME_S := $(shell uname -s)
+ifeq ($(UNAME_S),Darwin)
+	BROWSER=/Applications/Firefox.app/Contents/MacOS/firefox-bin
+endif
+ifeq ($(UNAME_S),Linux)
+	BROWSER=firefox
+endif
+
+.PHONY: build test clean deploy setBaseUrl setLogo
+
+build:
+	hugo -D
+
+test:
+	hugo server -D &
+	$(BROWSER) --new-tab http://localhost:1313/~$(USERNAME)/
+
+clean:
+	@rm -rf public
+
+deploy:
+	@echo 'Make sure BASE_URL is correct.'
+	rsync -avz --delete public/ $(USERNAME)@moons.$(DOMAIN):~/public_html
+
+setBaseUrl:
+	sed -i "s/baseURL:.*/baseURL: $(BASE_URL)/g" ./config/_default/config.yaml
+
+setLogo:
+	@cp $(CURRENT_ICON_PATH) ./assets/media/icon.png
+
+updatePublications:
+	academic --overwrite import --bibtex ./static/CV/publications.bib
+```
