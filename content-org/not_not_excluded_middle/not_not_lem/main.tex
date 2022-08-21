@@ -16,10 +16,21 @@ of New Mexico\\}
 \maketitle
 %\tableofcontents
 
+\begin{theorem}
+  $\vdash_I \neg\neg(A \lor \neg A)$
+\end{theorem}
+
 \begin{prooftree}
-  \hypo{A}
-  \hypo{A \rightarrow B}
-  \infer2[MP]{B}
+  \infer0[1]{A}
+  \infer1[Left intro $\lor$]{A \lor (A \rightarrow \bot)}
+  \infer0[2]{(A \lor (A \rightarrow \bot)) \rightarrow \bot}
+  \infer2[MP]{\bot}
+  \infer1[Intro-1]{A \rightarrow \bot}
+  \infer1[Right intro $\lor$]{A \lor (A \rightarrow \bot)}
+  \infer0[2]{(A \lor (A \rightarrow \bot)) \rightarrow \bot}
+  \infer2[MP]{\bot}
+  \infer1[Intro-2]{((A \lor (A \rightarrow \bot)) \rightarrow \bot) \rightarrow
+    \bot} 
 \end{prooftree}
 
 %\bibliographystyle{plain}
