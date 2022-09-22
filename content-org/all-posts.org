@@ -12,6 +12,14 @@
 :EXPORT_HUGO_SECTION: posts
 :END:
 
+** Optimality proof of Farey's sequence
+:PROPERTIES:
+:EXPORT_FILE_NAME: proof_optimality_farey
+:EXPORT_DATE:
+:END:
+
+[[http://www.johndcook.com/blog/2010/10/20/best-rational-approximation/][John Cook's post]]
+
 ** About Dickson's lemma and rewriting
 :PROPERTIES:
 :EXPORT_FILE_NAME: about_dickson_lemma_rewriting
