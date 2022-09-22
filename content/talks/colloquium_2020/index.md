@@ -41,7 +41,7 @@ featured: false
 url_code: ''
 url_pdf: ''
 url_slides: 'presentations/unm_colloquium_talk_2020.html'
-url_video: 'https://www.youtube.com/watch?v=Hq7IJZXZQbw'
+url_video: ''
 
 # Markdown Slides (optional).
 #   Associate this talk with Markdown slides.
