@@ -1,7 +1,7 @@
 ---
 # Documentation: https://wowchemy.com/docs/managing-content/
 
-title: 'AXDInterpolator: A Tool for Computing Interpolants for Arrays with MaxDif'
+title: 'AXDInterpolator: A Tool for Computing Interpolants for Arrays with MaxDiff'
 subtitle: ''
 summary: ''
 authors:
@@ -12,7 +12,7 @@ authors:
 tags: []
 categories: []
 date: '2021-01-01'
-lastmod: 2022-08-06T14:16:58-06:00
+lastmod: 2023-06-01T02:18:43-06:00
 featured: false
 draft: false
 
@@ -30,7 +30,7 @@ image:
 #   E.g. `projects = ["internal-project"]` references `content/project/deep-learning/index.md`.
 #   Otherwise, set `projects = []`.
 projects: []
-publishDate: '2022-08-06T20:16:56.225259Z'
+publishDate: '2023-06-01T08:18:42.966608Z'
 publication_types:
 - '1'
 abstract: ''

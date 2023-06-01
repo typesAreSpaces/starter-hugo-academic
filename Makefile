@@ -34,3 +34,7 @@ setLogo:
 
 updatePublications:
 	academic --overwrite import --bibtex ./static/CV/publications.bib
+	mv content/publication content/publications
+
+updateCV:
+	git submodule update static/CV
